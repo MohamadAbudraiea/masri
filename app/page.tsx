@@ -528,12 +528,12 @@ export default function HomePage() {
             className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up"
             style={{ animationDelay: "1.2s" }}
           >
-            <Link href="/products">
+            <Link href="/products" scroll={true}>
               <Button className="bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] hover:from-[#991B1B] hover:via-[#B91C1C] hover:to-[#DC2626] text-white px-10 py-4 rounded-lg transition-all duration-500 transform hover:scale-105 shadow-2xl hover:shadow-3xl font-semibold text-lg">
                 {t.hero.exploreProducts} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" scroll={true}>
               <Button
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 rounded-lg transition-all duration-500 bg-transparent backdrop-blur-sm hover:shadow-2xl font-semibold text-lg"
@@ -575,7 +575,7 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <Link href="/about">
+              <Link href="/about" scroll={true}>
                 <Button className="bg-gradient-to-r from-[#B91C1C] to-[#DC2626] hover:from-[#991B1B] hover:to-[#B91C1C] text-white px-8 py-3 rounded-lg transition-all duration-500 transform hover:scale-105 shadow-lg">
                   {t.about.learnMore} <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
@@ -602,34 +602,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Enhanced Features Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in">Why Industry Leaders Choose Us</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] mx-auto mb-8 rounded-full"></div>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {t.features.map((feature, index) => (
-              <div
-                key={index}
-                className="text-center group hover:transform hover:scale-110 transition-all duration-700 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div
-                  className={`inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r ${feature.color} rounded-full mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:rotate-12`}
-                >
-                  <feature.icon className="w-10 h-10 text-white" />
-                </div>
-                <h3 className="text-lg font-bold text-[#B91C1C] mb-2 group-hover:text-[#DC2626] transition-colors duration-300">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Enhanced Stats Section with Counters */}
       <section className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
@@ -724,7 +697,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="/products">
+            <Link href="/products" scroll={true}>
               <Button className="bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] hover:from-[#991B1B] hover:via-[#B91C1C] hover:to-[#DC2626] text-white px-10 py-4 rounded-lg transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl font-semibold text-lg">
                 {t.products.viewAll} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -732,7 +705,34 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+ {/* Enhanced Features Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in">Why Industry Leaders Choose Us</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] mx-auto mb-8 rounded-full"></div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {t.features.map((feature, index) => (
+              <div
+                key={index}
+                className="text-center group hover:transform hover:scale-110 transition-all duration-700 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div
+                  className={`inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r ${feature.color} rounded-full mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:rotate-12`}
+                >
+                  <feature.icon className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-[#B91C1C] mb-2 group-hover:text-[#DC2626] transition-colors duration-300">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Enhanced Services Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
@@ -879,7 +879,7 @@ export default function HomePage() {
               className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up"
               style={{ animationDelay: "0.8s" }}
             >
-              <Link href="/contact">
+              <Link href="/contact" scroll={true}>
                 <Button className="bg-white text-[#B91C1C] hover:bg-gray-100 px-10 py-4 rounded-lg transition-all duration-500 transform hover:scale-105 shadow-xl hover:shadow-2xl font-semibold text-lg">
                   {t.contact.contactNow}
                 </Button>

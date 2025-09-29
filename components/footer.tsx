@@ -38,7 +38,7 @@ export default function Footer({ language }: FooterProps) {
       company: "مجموعة مصري",
       tagline: "التميز في تجارة الصلب الممتازة",
       rights: "© 2025 مجموعة مصري. جميع الحقوق محفوظة.",
-      developer: "تطوير محمد أبو درايعة",
+      developer: "Developed by Mohamad Abudraiea",
       quickLinks: "روابط سريعة",
       contact: "معلومات الاتصال",
       followUs: "تواصل معنا",
@@ -87,9 +87,9 @@ export default function Footer({ language }: FooterProps) {
             {/* QR Codes */}
             <div className="flex gap-6">
               <div className="text-center">
-                <div className="w-20 h-20 bg-white rounded-lg p-2 mb-2">
+                <div className="w-40 h-40  rounded-lg p-2 mb-2">
                   <Image
-                    src="/whatsapp-qr-code.jpg"
+                    src="/whatsapp-qr.jpg"
                     alt="WhatsApp QR Code"
                     width={64}
                     height={64}
@@ -99,9 +99,9 @@ export default function Footer({ language }: FooterProps) {
                 <p className="text-xs text-gray-400">WhatsApp</p>
               </div>
               <div className="text-center">
-                <div className="w-20 h-20 bg-white rounded-lg p-2 mb-2">
+                <div className="w-40 h-40  rounded-lg p-2 mb-2">
                   <Image
-                    src="/wechat-qr-code.jpg"
+                    src="/wechat-qr.jpg"
                     alt="WeChat QR Code"
                     width={64}
                     height={64}
@@ -189,7 +189,7 @@ export default function Footer({ language }: FooterProps) {
                 <Globe className="w-4 h-4" />
                 <span>Global Steel Trading Excellence</span>
               </div>
-              <a href="#" className="text-gray-500 hover:text-gray-400 transition-colors text-xs">
+              <a href="https://abudraiea-profile.vercel.app/" className="text-gray-500 hover:text-gray-400 transition-colors text-xs">
                 {t.developer}
               </a>
             </div>
