@@ -18,7 +18,6 @@ import {
   Factory,
   Truck,
   CheckCircle,
-  Star,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -60,64 +59,61 @@ export default function HomePage() {
         { icon: Phone, number: "24/7", label: "Customer Support", description: "Always Available" },
       ],
       about: {
-          title: "About MASRE GROUP",
-          subtitle: "Building the Future of Steel Trading",
-          description:
-            "MASRE GROUP stands as a beacon of excellence in the global steel trading industry. Since our establishment in 2010, we have consistently delivered premium quality steel products while building lasting partnerships with clients across 50+ countries.",
-          highlights: [
-    "Strategic partnerships with leading steel manufacturers",
-    "Advanced logistics and supply chain management",
-    "Comprehensive quality assurance programs",
-    "Strong relationships with major customers, including Samir Qarman",
-    "Factory presence in Africa (Sudan) to serve regional markets",
-    "Expanding customer base across Africa",
-    "Diversified business operations, including a grain trading company",
-  ],
-
+        title: "About MASRE GROUP",
+        subtitle: "Building the Future of Steel Trading",
+        description:
+          "MASRE GROUP stands as a beacon of excellence in the global steel trading industry. Since our establishment in 2010, we have consistently delivered premium quality steel products while building lasting partnerships with clients across 50+ countries.",
+        highlights: [
+          "Strategic partnerships with leading steel manufacturers",
+          "Advanced logistics and supply chain management",
+          "Comprehensive quality assurance programs",
+          "Strong relationships with major customers, including Samir Qarman",
+          "Factory presence in Africa (Sudan) to serve regional markets",
+          "Expanding customer base across Africa",
+          "Diversified business operations, including a grain trading company",
+        ],
         learnMore: "Learn More",
       },
-     products: {
-  title: "Featured Products",
-  subtitle: "Premium Steel Solutions for Every Industry Need",
-  description:
-    "Discover our comprehensive range of high-quality steel products, meticulously sourced and rigorously tested to meet international standards.",
-  viewAll: "View All Products",
-  items: [
-    {
-      name: "Galvanized Iron (GI) Pipes",
-      description:
-        "High-quality galvanized iron pipes with excellent corrosion resistance, widely used in plumbing, construction, and industrial applications.",
-      image: "/i4.png",
-      category: "Pipes",
-      features: ["Diameter: 15mm - 500mm", "Wall Thickness: 1.5mm - 12mm", "Zinc Coating: 120-500 g/m²"],
-    },
-    {
-      name: "C-Shaped Steel Channels",
-      description:
-        "C-channel structural steel used for framing, support beams, and construction.",
-      image: "/j3.png",
-      category: "Structural Steel",
-      features: ["Size: 50mm x 30mm - 300mm x 90mm", "Length: 6m - 12m", "Grade: Q235, ASTM A36"],
-    },
-    {
-      name: "Galvanized Iron (GI) Sheets",
-      description:
-        "Corrosion-resistant galvanized iron sheets for roofing, cladding, and industrial applications.",
-      image: "/f3.png",
-      category: "Steel Sheets",
-      features: ["Thickness: 0.3mm - 3mm", "Width: 600mm - 1500mm", "Zinc Coating: 60-275 g/m²"],
-    },
-    {
-      name: "Galvanized Wire",
-      description:
-        "Durable galvanized steel wire with superior corrosion resistance for fencing, binding, and industrial applications.",
-      image: "/a3.png",
-      category: "Wire",
-      features: ["Diameter: 0.5mm - 6mm", "Zinc Coating: 40-300 g/m²", "Tensile Strength: 350-550 N/mm²"],
-    },
-  ],
-}
-
+      products: {
+        title: "Featured Products",
+        subtitle: "Premium Steel Solutions for Every Industry Need",
+        description:
+          "Discover our comprehensive range of high-quality steel products, meticulously sourced and rigorously tested to meet international standards.",
+        viewAll: "View All Products",
+        items: [
+          {
+            name: "Galvanized Iron (GI) Pipes",
+            description:
+              "High-quality galvanized iron pipes with excellent corrosion resistance, widely used in plumbing, construction, and industrial applications.",
+            image: "/i4.png",
+            category: "Pipes",
+            features: ["Diameter: 15mm - 500mm", "Wall Thickness: 1.5mm - 12mm", "Zinc Coating: 120-500 g/m²"],
+          },
+          {
+            name: "C-Shaped Steel Channels",
+            description: "C-channel structural steel used for framing, support beams, and construction.",
+            image: "/j3.png",
+            category: "Structural Steel",
+            features: ["Size: 50mm x 30mm - 300mm x 90mm", "Length: 6m - 12m", "Grade: Q235, ASTM A36"],
+          },
+          {
+            name: "Galvanized Iron (GI) Sheets",
+            description:
+              "Corrosion-resistant galvanized iron sheets for roofing, cladding, and industrial applications.",
+            image: "/f3.png",
+            category: "Steel Sheets",
+            features: ["Thickness: 0.3mm - 3mm", "Width: 600mm - 1500mm", "Zinc Coating: 60-275 g/m²"],
+          },
+          {
+            name: "Galvanized Wire",
+            description:
+              "Durable galvanized steel wire with superior corrosion resistance for fencing, binding, and industrial applications.",
+            image: "/a3.png",
+            category: "Wire",
+            features: ["Diameter: 0.5mm - 6mm", "Zinc Coating: 40-300 g/m²", "Tensile Strength: 350-550 N/mm²"],
+          },
+        ],
+      },
       services: {
         title: "Our Services",
         subtitle: "Comprehensive Steel Trading Solutions",
@@ -555,7 +551,7 @@ export default function HomePage() {
         </div>
       </section>
 
-  {/* About Preview Section */}
+      {/* About Preview Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -605,7 +601,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
 
       {/* Enhanced Features Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
@@ -784,7 +779,6 @@ export default function HomePage() {
         </div>
       </section>
 
-    
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
@@ -815,8 +809,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-    
 
       {/* Enhanced Contact Preview */}
       <section className="py-20 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] relative overflow-hidden">
@@ -892,7 +884,6 @@ export default function HomePage() {
                   {t.contact.contactNow}
                 </Button>
               </Link>
-          
             </div>
           </div>
         </div>
