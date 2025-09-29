@@ -1,0 +1,237 @@
+"use client"
+
+import Image from "next/image"
+import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Factory, Shield, Award, Truck, Users, Zap } from "lucide-react"
+
+export default function FactoryPage() {
+  const capabilities = [
+    {
+      icon: Factory,
+      title: "Advanced Manufacturing",
+      description: "State-of-the-art steel processing facilities with cutting-edge technology",
+    },
+    {
+      icon: Shield,
+      title: "Quality Control",
+      description: "Rigorous quality assurance processes ensuring international standards",
+    },
+    {
+      icon: Award,
+      title: "Certified Operations",
+      description: "ISO 9001:2015 certified manufacturing and quality management systems",
+    },
+    {
+      icon: Truck,
+      title: "Logistics Excellence",
+      description: "Efficient supply chain and delivery systems across the region",
+    },
+    {
+      icon: Users,
+      title: "Skilled Workforce",
+      description: "Experienced professionals dedicated to excellence in steel production",
+    },
+    {
+      icon: Zap,
+      title: "Innovation Focus",
+      description: "Continuous investment in technology and process improvements",
+    },
+  ]
+
+  const processes = [
+    {
+      step: "01",
+      title: "Raw Material Selection",
+      description: "Careful selection of high-grade raw materials from trusted global suppliers",
+      image: "/steel-raw-materials-warehouse.jpg",
+    },
+    {
+      step: "02",
+      title: "Processing & Fabrication",
+      description: "Advanced processing using modern machinery and precision techniques",
+      image: "/steel-processing-machinery-factory.jpg",
+    },
+    {
+      step: "03",
+      title: "Quality Testing",
+      description: "Comprehensive testing and inspection to ensure product specifications",
+      image: "/steel-quality-testing-laboratory.jpg",
+    },
+    {
+      step: "04",
+      title: "Packaging & Delivery",
+      description: "Professional packaging and timely delivery to customer locations",
+      image: "/steel-packaging-delivery-warehouse.jpg",
+    },
+  ]
+
+  const certifications = [
+    { name: "ISO 9001:2015", description: "Quality Management System" },
+    { name: "ISO 14001", description: "Environmental Management" },
+    { name: "OHSAS 18001", description: "Occupational Health & Safety" },
+    { name: "API 5L", description: "Pipeline Steel Specification" },
+    { name: "ASTM Standards", description: "American Society for Testing Materials" },
+    { name: "EN Standards", description: "European Conformity Standards" },
+  ]
+
+  return (
+    <div className="min-h-screen py-20">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+            Our <span className="text-[#B91C1C]">Manufacturing</span> Excellence
+          </h1>
+          <div className="w-24 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Discover our world-class manufacturing facilities and processes that deliver premium steel products to
+            global markets.
+          </p>
+        </div>
+
+        {/* Hero Image */}
+        <div className="mb-20">
+          <div className="relative rounded-lg overflow-hidden shadow-2xl">
+            <Image
+              src="/modern-steel-factory-manufacturing-facility.jpg"
+              alt="MASRE GROUP Manufacturing Facility"
+              width={1200}
+              height={500}
+              className="w-full h-96 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
+              <div className="text-white p-8">
+                <h2 className="text-3xl font-bold mb-4">State-of-the-Art Facilities</h2>
+                <p className="text-xl">Modern manufacturing complex in Amman, Jordan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Capabilities */}
+        <section className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Capabilities</h2>
+            <div className="w-16 h-1 bg-[#B91C1C] mx-auto"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {capabilities.map((capability, index) => (
+              <Card
+                key={index}
+                className="p-6 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 dark:bg-gray-800"
+              >
+                <capability.icon className="w-12 h-12 text-[#B91C1C] mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">{capability.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{capability.description}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Manufacturing Process */}
+        <section className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Manufacturing Process</h2>
+            <div className="w-16 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Our streamlined manufacturing process ensures consistent quality and timely delivery of steel products.
+            </p>
+          </div>
+          <div className="space-y-12">
+            {processes.map((process, index) => (
+              <div
+                key={index}
+                className={`flex flex-col lg:flex-row items-center gap-8 ${
+                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                }`}
+              >
+                <div className="lg:w-1/2">
+                  <Image
+                    src={process.image || "/placeholder.svg"}
+                    alt={process.title}
+                    width={500}
+                    height={300}
+                    className="rounded-lg shadow-lg w-full h-64 object-cover"
+                  />
+                </div>
+                <div className="lg:w-1/2">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-[#B91C1C] text-white rounded-full flex items-center justify-center font-bold text-lg mr-4">
+                      {process.step}
+                    </div>
+                    <h3 className="text-2xl font-bold">{process.title}</h3>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">{process.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Certifications */}
+        <section className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Certifications & Standards</h2>
+            <div className="w-16 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Our commitment to quality is validated by international certifications and adherence to global standards.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {certifications.map((cert, index) => (
+              <Card
+                key={index}
+                className="p-6 text-center hover:shadow-lg transition-all duration-300 dark:bg-gray-800"
+              >
+                <Badge className="bg-[#B91C1C] text-white mb-4 text-lg px-4 py-2">{cert.name}</Badge>
+                <p className="text-gray-600 dark:text-gray-300">{cert.description}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Factory Stats */}
+        <section className="mb-20">
+          <Card className="bg-gradient-to-r from-[#B91C1C] to-[#991B1B] text-white p-12">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-4">Production Capacity</h2>
+              <p className="text-red-100">Our manufacturing capabilities by the numbers</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="text-4xl font-bold mb-2">50,000</div>
+                <div className="text-red-100">Tons/Month</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold mb-2">24/7</div>
+                <div className="text-red-100">Operations</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold mb-2">200+</div>
+                <div className="text-red-100">Skilled Workers</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold mb-2">99.5%</div>
+                <div className="text-red-100">Quality Rate</div>
+              </div>
+            </div>
+          </Card>
+        </section>
+
+        {/* CTA */}
+        <section className="text-center">
+          <Card className="p-12 dark:bg-gray-800">
+            <h2 className="text-3xl font-bold mb-4">Visit Our Facility</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+              Experience our manufacturing excellence firsthand. Schedule a visit to our state-of-the-art facility in
+              Amman, Jordan.
+            </p>
+            <Button className="bg-[#B91C1C] hover:bg-[#991B1B] text-white px-8 py-3">Schedule Factory Tour</Button>
+          </Card>
+        </section>
+      </div>
+    </div>
+  )
+}
