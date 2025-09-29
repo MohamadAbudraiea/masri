@@ -243,7 +243,7 @@ export default function ProductsPage() {
           <p className="text-gray-600 dark:text-gray-300 mb-6">
             We provide custom steel fabrication and specialized products to meet your specific requirements.
           </p>
-          <Link href="/contact">
+          <Link href="/contact" scroll={true}>
             <Button className="bg-[#B91C1C] hover:bg-[#991B1B] text-white px-8 py-3">Contact Our Experts</Button>
           </Link>
         </div>
