@@ -205,7 +205,7 @@ export default function ProductsPage() {
                   alt={product.name}
                   width={400}
                   height={300}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-90 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 right-4">
                   <Badge className="bg-[#B91C1C] text-white">Premium Quality</Badge>

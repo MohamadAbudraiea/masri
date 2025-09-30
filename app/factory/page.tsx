@@ -4,41 +4,49 @@ import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Factory, Shield, Award, Truck, Users, Zap } from "lucide-react"
-
+import { Factory, Shield, Award, Building, Users, Truck, Check } from "lucide-react"
+import { 
+  Factory, 
+  Globe, 
+  Recycle, 
+  MapPin, 
+  Handshake, 
+  Rocket 
+} from "lucide-react"
 export default function FactoryPage() {
-  const capabilities = [
-    {
-      icon: Factory,
-      title: "Advanced Manufacturing",
-      description: "State-of-the-art steel processing facilities with cutting-edge technology",
-    },
-    {
-      icon: Shield,
-      title: "Quality Control",
-      description: "Rigorous quality assurance processes ensuring international standards",
-    },
-    {
-      icon: Award,
-      title: "Certified Operations",
-      description: "ISO 9001:2015 certified manufacturing and quality management systems",
-    },
-    {
-      icon: Truck,
-      title: "Logistics Excellence",
-      description: "Efficient supply chain and delivery systems across the region",
-    },
-    {
-      icon: Users,
-      title: "Skilled Workforce",
-      description: "Experienced professionals dedicated to excellence in steel production",
-    },
-    {
-      icon: Zap,
-      title: "Innovation Focus",
-      description: "Continuous investment in technology and process improvements",
-    },
-  ]
+ const capabilities = [
+  {
+    icon: Factory,
+    title: "Production Capacity",
+    description: "High-volume steel manufacturing to meet large-scale project demands",
+  },
+  {
+    icon: Globe,
+    title: "Global Reach",
+    description: "Supplying steel products to international markets with strong export capabilities",
+  },
+  {
+    icon: Recycle,
+    title: "Sustainability",
+    description: "Eco-friendly processes emphasizing recycling and reduced carbon footprint",
+  },
+  {
+    icon: MapPin,
+    title: "Strategic Location",
+    description: "Centrally located facilities ensuring accessibility across regions",
+  },
+  {
+    icon: Handshake,
+    title: "Partnerships",
+    description: "Strong collaborations with contractors, developers, and distributors",
+  },
+  {
+    icon: Rocket,
+    title: "Future Growth",
+    description: "Expanding operations with continuous investment in new markets and technologies",
+  },
+]
+
 
   const processes = [
     {
@@ -220,17 +228,7 @@ export default function FactoryPage() {
           </Card>
         </section>
 
-        {/* CTA */}
-        <section className="text-center">
-          <Card className="p-12 dark:bg-gray-800">
-            <h2 className="text-3xl font-bold mb-4">Visit Our Facility</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Experience our manufacturing excellence firsthand. Schedule a visit to our state-of-the-art facility in
-              Amman, Jordan.
-            </p>
-            <Button className="bg-[#B91C1C] hover:bg-[#991B1B] text-white px-8 py-3">Schedule Factory Tour</Button>
-          </Card>
-        </section>
+     
       </div>
     </div>
   )
