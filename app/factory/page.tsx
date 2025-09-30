@@ -3,50 +3,41 @@
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Factory, Shield, Award, Building, Users, Truck, Check } from "lucide-react"
-import { 
-  Factory, 
-  Globe, 
-  Recycle, 
-  MapPin, 
-  Handshake, 
-  Rocket 
-} from "lucide-react"
-export default function FactoryPage() {
- const capabilities = [
-  {
-    icon: Factory,
-    title: "Production Capacity",
-    description: "High-volume steel manufacturing to meet large-scale project demands",
-  },
-  {
-    icon: Globe,
-    title: "Global Reach",
-    description: "Supplying steel products to international markets with strong export capabilities",
-  },
-  {
-    icon: Recycle,
-    title: "Sustainability",
-    description: "Eco-friendly processes emphasizing recycling and reduced carbon footprint",
-  },
-  {
-    icon: MapPin,
-    title: "Strategic Location",
-    description: "Centrally located facilities ensuring accessibility across regions",
-  },
-  {
-    icon: Handshake,
-    title: "Partnerships",
-    description: "Strong collaborations with contractors, developers, and distributors",
-  },
-  {
-    icon: Rocket,
-    title: "Future Growth",
-    description: "Expanding operations with continuous investment in new markets and technologies",
-  },
-]
+import { Factory, Globe, Recycle, MapPin, Handshake, Rocket } from "lucide-react"
 
+export default function FactoryPage() {
+  const capabilities = [
+    {
+      icon: Factory,
+      title: "Production Capacity",
+      description: "High-volume steel manufacturing to meet large-scale project demands",
+    },
+    {
+      icon: Globe,
+      title: "Global Reach",
+      description: "Supplying steel products to international markets with strong export capabilities",
+    },
+    {
+      icon: Recycle,
+      title: "Sustainability",
+      description: "Eco-friendly processes emphasizing recycling and reduced carbon footprint",
+    },
+    {
+      icon: MapPin,
+      title: "Strategic Location",
+      description: "Centrally located facilities ensuring accessibility across regions",
+    },
+    {
+      icon: Handshake,
+      title: "Partnerships",
+      description: "Strong collaborations with contractors, developers, and distributors",
+    },
+    {
+      icon: Rocket,
+      title: "Future Growth",
+      description: "Expanding operations with continuous investment in new markets and technologies",
+    },
+  ]
 
   const processes = [
     {
@@ -227,8 +218,6 @@ export default function FactoryPage() {
             </div>
           </Card>
         </section>
-
-     
       </div>
     </div>
   )
