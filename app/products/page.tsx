@@ -66,13 +66,13 @@ export default function ProductsPage() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <div className="h-64 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 flex items-center justify-center p-6">
+                  <div className="h-90 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 flex items-center justify-center p-6">
                     <Image
                       src={product.image || "/placeholder.svg"}
                       alt={product.name}
-                      width={400}
-                      height={300}
-                      className="object-contain w-full h-full group-hover:scale-110 transition-transform duration-300"
+                      width={1200}
+                      height={500}
+                      className="object-contain w-full h-96 group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                   <div className="absolute top-4 right-4">

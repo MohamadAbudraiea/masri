@@ -189,7 +189,8 @@ export default function Footer({ language }: FooterProps) {
                 <Globe className="w-4 h-4" />
                 <span>Global Steel Trading Excellence</span>
               </div>
-              <a href="https://abudraiea-profile.vercel.app/" className="text-gray-500 hover:text-gray-400 transition-colors text-xs">
+              <a href="https://abudraiea-profile.vercel.app/" target="_blank"
+  rel="noopener noreferrer"  className="text-gray-500 hover:text-gray-400 transition-colors text-xs">
                 {t.developer}
               </a>
             </div>

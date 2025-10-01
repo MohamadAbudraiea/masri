@@ -17,12 +17,12 @@ export const products: Product[] = [
     description:
       "Premium hot rolled steel coils manufactured to exacting standards for construction, automotive, and manufacturing industries. Our HRC products deliver exceptional formability, strength, and consistent quality for critical applications requiring superior performance and reliability.",
     specifications: [
-      "Thickness: 1.2mm - 25mm",
-      "Width: 1000mm - 2000mm",
-      "Grade: Q235, SS400, ASTM A36",
-      "Surface: Black, oiled finish",
-      "Application: Construction, automotive, manufacturing",
-      "Standard: ASTM A1011, JIS G3131",
+      "Standard: ASTM,AISI,DIN,EN,BS,SUS, JIS",
+      "Technique: Cold Rolled, Hot Rolled",
+      "Thickness: 1~50mm and customizable",
+      "Width: 900-1500mm or Customizable",
+      "Tolerance: ±2.5%",
+      "Terms Of Trade: EXW,FOB, CRF, CIF ,CNF or others",
     ],
     price: "Contact for pricing",
   },
@@ -34,12 +34,11 @@ export const products: Product[] = [
     description:
       "Superior galvanized steel wire featuring advanced zinc coating technology for maximum corrosion resistance. Ideal for outdoor applications including fencing, binding, and industrial uses where durability and longevity are paramount.",
     specifications: [
-      "Diameter: 0.5mm - 6mm",
-      "Zinc coating: 40-300 g/m²",
-      "Tensile strength: 350-550 N/mm²",
-      "Surface: Hot-dip galvanized",
-      "Application: Fencing, binding, construction",
-      "Standard: ASTM A641, BS 443",
+      "Standard: ASTM,AISI,DIN,EN,BS,SUS, JIS",
+      "Zinc coat: 10-280g/m2",
+      "Surface treatment: PVC   coated.electro or   hot dipped galvanized",
+      "Material: Low   Carbon Steel   Q195.sea 1008,1006²",
+      "Wire diameter: BWG26-BWG8(0.45mm-5mm) or as required",
     ],
     price: "Contact for pricing",
   },
@@ -51,12 +50,13 @@ export const products: Product[] = [
     description:
       "High-strength carbon steel square bars precision-manufactured for structural applications. Engineered for superior load-bearing capacity and dimensional accuracy, perfect for construction, machinery fabrication, and industrial frameworks.",
     specifications: [
-      "Sizes: 10mm x 10mm - 200mm x 200mm",
-      "Length: 6m - 12m",
-      "Grades: A36, S235, SS400",
-      "Surface: Black, pickled, or painted",
-      "Application: Construction, machinery, fabrication",
-      "Standard: ASTM A36, EN 10025",
+      "Standard: ASTM,AISI,DIN,EN,BS,SUS, JIS",
+      "Material: Q195 ,Q215 ,Q235 ,Q255 ,Q275 ,SS330 , SS400, SS490, SS540, S185JR, S235JR, S235JRG1, S235J0, S275J0, S275J2G3ASTM \n\n  1010, 1020, 1025, 1030, 1035, 1040, 1045, 1050, 1055, 1060, 1080, 1022 A53, A106, A192, A315b, ST33, ST37, ST35.8, ST42, ST45, ST52S10C, S20C, S25C, S30C, S40C, S45C, S55C, S58C, SK5, C10, C20, C30, C45, C45, C60, C22E, C30E, C40E, C45E, C55E, C60E, C67E, C75E, C85E, CK22, CK25, CK30, CK35, CK45, CK50, CK60, CK67 ",
+      "Technique: Cold Rolled ,Hot Rolled",
+      "Diameter: 2~500mm or Customizable",
+      "Length: 3-6m or Customizable",
+      "Tolerance: ±2.5%",
+      "Terms Of Trade: EXW,FOB, CRF, CIF ,CNF or others"
     ],
     price: "Contact for pricing",
   },
@@ -68,12 +68,12 @@ export const products: Product[] = [
     description:
       "Premium flat hot rolled steel sheets with exceptional surface quality and dimensional precision. Specifically designed for automotive manufacturing, shipbuilding, and heavy machinery applications demanding consistent performance.",
     specifications: [
-      "Thickness: 1.5mm - 20mm",
-      "Width: 1000mm - 2000mm",
-      "Length: Custom cut available",
-      "Grade: Q235, SS400, ASTM A36",
-      "Application: Automotive, shipbuilding, machinery",
-      "Standard: ASTM A1011, JIS G3131",
+      "Standard: ASTM,AISI,DIN,EN,BS,SUS, JIS",
+      "Technique: Cold Rolled, Hot Rolled",
+      "Thickness: 1~50mm and customizable",
+      "Width: 900-1500mm or Customizable",
+      "Tolerance: ±2.5%",
+      "Terms Of Trade: EXW,FOB, CRF, CIF ,CNF or others",
     ],
     price: "Contact for pricing",
   },
@@ -85,29 +85,34 @@ export const products: Product[] = [
     description:
       "Premium corrosion-resistant galvanized iron sheets featuring advanced zinc coating for extended service life. Ideal for roofing, cladding, and industrial applications requiring superior weather resistance and aesthetic appeal.",
     specifications: [
-      "Thickness: 0.3mm - 3mm",
-      "Width: 600mm - 1500mm",
-      "Zinc coating: 60-275 g/m²",
-      "Surface: Regular/minimized/zero spangle",
-      "Application: Roofing, cladding, industrial",
-      "Standard: ASTM A653, EN 10346",
+      "Standard: ASTM,AISI,DIN,EN,BS,SUS, JIS",
+      "Material: Q195 ,Q215 ,Q235 ,Q255 ,Q275 ,SS330 , SS400, SS490, SS540, S185JR, S235JR, S235JRG1, S235J0, S275J0, S275J2G3ASTM 1010, 1020, 1025, 1030, 1035, 1040, 1045, 1050, 1055, 1060, 1080, 1022 A53, A106, A192, A315b, ST33, ST37, ST35.8, ST42, ST45, ST52S10C, S20C, S25C, S30C, S40C, S45C, S55C, S58C, SK5, C10, C20, C30, C45, C45, C60, C22E, C30E, C40E, C45E, C55E, C60E, C67E, C75E, C85E, CK22, CK25, CK30, CK35, CK45, CK50, CK60, CK67",
+      "Technique: Cold Rolled, Hot Rolled",
+      "Thickness: 1~50mm and customizable",
+      "Length: 500-3000mm and customizable",
+      "width: 50-1500mm or customizable",
+      "Tolerance: ±2.5",
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others "
+
     ],
     price: "Contact for pricing",
   },
   {
     id: 6,
-    name: "Black Steel Pipes",
+    name: "Carbon Steel Pipes",
     category: "pipes",
     image: "/h3.png",
     description:
       "Robust uncoated black steel pipes engineered for water, gas distribution, and structural applications. Manufactured to international standards with consistent quality and reliability for critical infrastructure projects.",
     specifications: [
-      "Diameter: 15mm - 600mm",
+      "Standard: API, ASTM, bs, GB, API 5L, ASTM A106-2006,ASTM A53-2007, BS 1387, BS 1139, BS EN10219, GB 3087-1999, GB/T3901,EN, BS, JIS",
+      "Out Diameter: 10-1500mm",
       "Wall thickness: 1.5mm - 20mm",
-      "Standard: ASTM A53, API 5L",
-      "Type: Seamless, ERW (Electric Resistance Welded)",
-      "Application: Water, gas distribution, structural",
-      "Grade: Grade A, Grade B",
+      "Length: 1-12m",
+      "Shape: Round, Square or Rectangular",
+      "Thickness:	0.35 - 100mm",
+      "Tolerance:	±2.5%",
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others"
     ],
     price: "Contact for pricing",
   },
@@ -119,12 +124,15 @@ export const products: Product[] = [
     description:
       "Premium galvanized iron pipes with superior corrosion protection through advanced hot-dip galvanizing process. Perfect for plumbing, construction, and industrial installations requiring long-term durability and minimal maintenance.",
     specifications: [
-      "Diameter: 15mm - 500mm",
-      "Wall thickness: 1.5mm - 12mm",
-      "Zinc coating: 120-500 g/m²",
-      "Standard: ASTM A53, BS 1387",
-      "Application: Plumbing, construction, industrial",
-      "Type: Seamless, ERW",
+      "Standard : ASTM,JIS,DIN,GB,AISI,DIN,EN",
+      "Material: 201, 202, 301, 301L, 304, 304L, 316, 316L, 321, 310S, 904L, 410, 420J2, 430, 2205, 2507, 321H, 347, 347H, 403, 405, 409, 420, 430, 631, 904L, 305, 301L, 317, 317L, 309, 309S 310",
+      "Technique: Cold drawn, Hot rolled, Cold   rolled and Others.",
+      "Outer Diameter: 20mm-1200mm or Customizable",
+      "Thickness: 6-3000mm or Customizable",
+      "Length: Seamless, 1-12m or Customizable",
+      "Tolerance: ±2.5%",
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others"
+
     ],
     price: "Contact for pricing",
   },
@@ -136,12 +144,25 @@ export const products: Product[] = [
     description:
       "Versatile C-channel structural steel profiles engineered for framing, support beams, and construction applications. Precision-manufactured for consistent dimensions and superior load-bearing capabilities.",
     specifications: [
-      "Size: 50mm x 30mm - 300mm x 90mm",
-      "Length: 6m - 12m",
-      "Grade: Q235, ASTM A36, S275",
-      "Surface: Black, painted, galvanized",
-      "Application: Framing, support beams, construction",
-      "Standard: ASTM A36, EN 10025",
+    // complete
+      "Standard : ASTM,JIS,DIN,GB,AISI,DIN,EN",
+      "80×40×20×2.5 :3.925	 kg/m",
+      "80×40×20×3 : 4.71	kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+      "80×40×20×2.5	: kg/m",
+
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others"
     ],
     price: "Contact for pricing",
   },
@@ -153,29 +174,29 @@ export const products: Product[] = [
     description:
       "High-quality galvanized steel coils featuring consistent zinc coating for exceptional corrosion resistance. Manufactured for industrial and commercial applications requiring reliable performance and aesthetic appeal.",
     specifications: [
-      "Thickness: 0.3mm - 3mm",
+      "Standard : ASTM,JIS,DIN,GB,AISI,DIN,EN",
+      "Thickness: 0.12mm-6.00mm",
       "Width: 600mm - 1500mm",
-      "Zinc coating: 60-275 g/m²",
-      "Surface: Regular/zero spangle",
-      "Application: Industrial, commercial manufacturing",
-      "Standard: ASTM A653, JIS G3302",
+      "Thickness of Aluminum Zinc Coating	:10-200g/m²",
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others"
+
     ],
     price: "Contact for pricing",
   },
   {
     id: 10,
-    name: "Black Steel Tubes",
+    name: "Carbon Steel Tubes",
     category: "pipes",
     image: "/m4.png",
     description:
       "Precision-engineered uncoated black steel tubes manufactured for construction, mechanical, and industrial applications. Consistent quality and dimensional accuracy for demanding projects requiring reliable performance.",
     specifications: [
+      "Standards : ASTM,JIS,DIN,GB,AISI,DIN,EN",
       "Diameter: 20mm - 500mm",
-      "Wall thickness: 1.5mm - 12mm",
-      "Standard: ASTM A500, EN 10219",
-      "Type: Round, square, rectangular",
-      "Application: Construction, mechanical, industrial",
-      "Grade: Grade A, Grade B, Grade C",
+      "Grade:10#, 20#, 45#, Q235, Q345, Q195, Q215, ST52	\nST42, ST35, 10#-45#, Q195-Q345, ST35-ST52 \nQ235, Q235B, S275, S275jr, A53, st37,  st52\n Q195 → Grade B, SS330,SPHC, S185 \n Q215 → Grade C,CS Type B,SS330, SPHC \n Q235 → Grade D,SS400,S235JR,S235JO,S235J2 \n Q345 → SS500,ST52 "
+      "Length: 1-12m",
+      "Tolerance: ±2.5%",
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others"
     ],
     price: "Contact for pricing",
   },
@@ -187,12 +208,12 @@ export const products: Product[] = [
     description:
       "Precision-cut galvanized edges manufactured for roofing, cladding, and industrial sheet finishing applications. Superior edge quality and consistent dimensions for professional installations.",
     specifications: [
-      "Thickness: 0.3mm - 3mm",
-      "Width: 20mm - 100mm",
-      "Zinc coating: 60-275 g/m²",
-      "Edge type: Slit, sheared",
-      "Application: Roofing, cladding, finishing",
-      "Standard: ASTM A653, EN 10346",
+      "Material: Q195, Q215, Q235B, Q345B, S235JR /S235 /S355JR /S355SS440/ SM400A /SM400B ",
+      "Size: 25*25mm-250*250mm,  or customized",
+      "Length:1-12m",
+      "Dimension: 20*20*2mm-200*200*24mm",
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others"
+
     ],
     price: "Contact for pricing",
   },
@@ -204,12 +225,12 @@ export const products: Product[] = [
     description:
       "High-strength steel reinforcement bars engineered for concrete reinforcement in construction projects. Superior bond strength and ductility ensuring structural integrity for buildings, bridges, and infrastructure.",
     specifications: [
-      "Grades: Grade 40, Grade 60",
-      "Sizes: 8mm - 32mm diameter",
-      "Length: 12m standard, custom available",
-      "Standard: ASTM A615, BS 4449",
-      "Application: Concrete reinforcement, construction",
-      "Surface: Deformed (ribbed)",
+      "Standard: ASTM, JIS, DIN, GB, AISI, DIN, EN,",
+      "Material:SHRB335, HRB400 , HRB500, JISSD390, SD490, SD400;  GR300, 420, 520 ; ASTM A615 GR60; BS4449 GR460,GR500",
+      "Thickness: 6-40mm or customized",
+      "Tolerance: ±2.5%",
+      "Terms Of Trade:EXW,FOB, CRF, CIF ,CNF or others"
+      
     ],
     price: "Contact for pricing",
   },
@@ -247,4 +268,5 @@ export const products: Product[] = [
     ],
     price: "Contact for pricing",
   },
+  
 ]
