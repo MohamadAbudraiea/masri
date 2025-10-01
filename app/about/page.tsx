@@ -8,9 +8,21 @@ export default function AboutPage() {
   const milestones = [
     { year: "2010", title: "Company Founded", description: "MASRE GROUP established in Amman, Jordan" },
     { year: "2013", title: "Regional Expansion", description: "Extended operations across Middle East" },
-    { year: "2019", title: "Global Partnerships", description: "Formed strategic partnerships with leading steel manufacturers worldwide" },
-    { year: "2022", title: "African Market Growth", description: "Expanded operations with strong presence in Sudan and across Africa" },
-    { year: "2024", title: "Sustainability Initiative", description: "Launched green steel trading program to promote eco-friendly solutions" },
+    {
+      year: "2019",
+      title: "Global Partnerships",
+      description: "Formed strategic partnerships with leading steel manufacturers worldwide",
+    },
+    {
+      year: "2022",
+      title: "African Market Growth",
+      description: "Expanded operations with strong presence in Sudan and across Africa",
+    },
+    {
+      year: "2024",
+      title: "Sustainability Initiative",
+      description: "Launched green steel trading program to promote eco-friendly solutions",
+    },
   ]
 
   const values = [
@@ -36,190 +48,270 @@ export default function AboutPage() {
     },
   ]
 
-  const team = [
-    {
-      name: "Mostafa Masre",
-      position: "CEO & Founder",
-      image: "/professional-businessman-ceo.jpg",
-      description: "Leading MASRE GROUP with 15+ years of expertise in global steel trading and industrial growth.",
-    },
-    {
-      name: "Regional Manager",
-      position: "Operations Director",
-      image: "/professional-businesswoman-manager.jpg",
-      description: "Oversees African and Middle Eastern operations, ensuring seamless logistics and expansion.",
-    },
-    {
-      name: "Technical Team",
-      position: "Quality Assurance",
-      image: "/engineering-team-steel-quality.jpg",
-      description: "Guarantees compliance with international steel standards and sustainable practices.",
-    },
-  ]
-
   return (
-    <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      {/* Luxury Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "radial-gradient(circle, #B91C1C 1px, transparent 1px)",
+            backgroundSize: "50px 50px",
+          }}
+        ></div>
+      </div>
+
+      <div className="relative container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+        <div className="text-center mb-20">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in">
             About <span className="text-[#B91C1C]">MASRE GROUP</span>
           </h1>
-          <div className="w-24 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            MASRE GROUP stands as a beacon of excellence in steel trading, building strong partnerships 
-            and delivering sustainable solutions since 2010.
+          <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto mb-10 rounded-full animate-gradient-x"></div>
+          <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+            MASRE GROUP stands as a beacon of excellence in steel trading, building strong partnerships and delivering
+            sustainable solutions since 2010.
           </p>
         </div>
 
         {/* Company Story */}
-        <section className="mb-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-              <div className="space-y-4 text-gray-600 dark:text-gray-300">
+        <section className="mb-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="animate-fade-in-left">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-2 h-20 bg-gradient-to-b from-[#B91C1C] to-[#DC2626] rounded-full"></div>
+                <h2 className="text-4xl md:text-5xl font-bold">Our Story</h2>
+              </div>
+              <div className="space-y-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed font-light">
                 <p>
-                  Founded in Amman, Jordan in 2010, MASRE GROUP started with a vision to redefine excellence in steel trading. 
-                  From day one, our focus has been on delivering trusted quality and building lasting relationships.
+                  Founded in Amman, Jordan in 2010, MASRE GROUP started with a vision to redefine excellence in steel
+                  trading. From day one, our focus has been on delivering trusted quality and building lasting
+                  relationships.
                 </p>
                 <p>
-                  With a factory presence in Sudan, we expanded across Africa, establishing a strong supply chain and 
+                  With a factory presence in Sudan, we expanded across Africa, establishing a strong supply chain and
                   supporting regional development with premium steel solutions.
                 </p>
                 <p>
-                  Today, MASRE GROUP serves 50+ countries with diversified business operations, including a grain trading arm, 
-                  making us a trusted global partner in industrial growth.
+                  Today, MASRE GROUP serves 50+ countries with diversified business operations, including a grain
+                  trading arm, making us a trusted global partner in industrial growth.
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative animate-fade-in-right">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#B91C1C]/20 to-[#DC2626]/20 rounded-3xl blur-2xl"></div>
               <Image
                 src="/modern-steel-trading-office-building.jpg"
                 alt="MASRE GROUP Office"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-2xl"
+                width={700}
+                height={500}
+                className="relative rounded-2xl shadow-2xl"
               />
             </div>
           </div>
         </section>
 
+        {/* Chairman's Letter - Redesigned Simple & Clean */}
+        <section className="mb-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Message from the Chairman</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto rounded-full animate-gradient-x"></div>
+          </div>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-5 gap-12 items-start">
+              {/* Chairman Image - Simple & Elegant */}
+              <div className="lg:col-span-2">
+                <div className="sticky top-24">
+                  <div className="relative group">
+                    {/* Elegant Glow */}
+                    <div className="absolute -inset-8 bg-gradient-to-r from-[#B91C1C]/30 to-[#DC2626]/30 rounded-full blur-3xl opacity-60"></div>
+
+                    {/* Image */}
+                    <div className="relative">
+                      <Image
+                        src="/professional-businessman-ceo.jpg"
+                        alt="Mostafa Masre - Chairman & CEO"
+                        width={400}
+                        height={400}
+                        className="relative w-full rounded-3xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+
+                    {/* Info Below Image */}
+                    <div className="mt-8 text-center space-y-3">
+                      <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Mostafa Masre</h3>
+                      <p className="text-xl text-[#B91C1C] font-semibold">Chairman & CEO</p>
+                      <div className="w-24 h-1 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] mx-auto rounded-full"></div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">MASRE GROUP</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Letter Content - Clean Typography */}
+              <div className="lg:col-span-3 space-y-8">
+                <div className="space-y-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                  <p className="text-xl font-light italic text-gray-800 dark:text-gray-200">
+                    Dear Esteemed Partners, Investors, and Stakeholders,
+                  </p>
+
+                  <p className="first-letter:text-6xl first-letter:font-bold first-letter:text-[#B91C1C] first-letter:mr-3 first-letter:float-left first-letter:leading-none">
+                    It is with immense pride and gratitude that I reflect on MASRE GROUP's extraordinary journey from
+                    our founding in 2010 to becoming a distinguished leader in the global steel trading industry. Our
+                    success is rooted in an unwavering commitment to excellence, integrity, and the cultivation of
+                    meaningful, lasting relationships with our valued clients and partners worldwide.
+                  </p>
+
+                  <p>
+                    In an increasingly dynamic and competitive marketplace, we have maintained our steadfast dedication
+                    to delivering premium steel products while embracing innovation, sustainability, and
+                    forward-thinking business practices. Our strategic expansion into African markets and successful
+                    diversification into grain trading exemplifies our vision for sustainable, long-term growth and our
+                    commitment to serving the diverse needs of global industries.
+                  </p>
+
+                  <p>
+                    Our achievements are a testament to the trust and partnership of our clients, the dedication of our
+                    team, and our relentless pursuit of operational excellence. With operations spanning over 50
+                    countries and a robust presence in key markets, we have established ourselves as a reliable partner
+                    in building the infrastructure of tomorrow.
+                  </p>
+
+                  <p>
+                    Looking ahead, MASRE GROUP will continue to strengthen our global footprint, invest strategically in
+                    cutting-edge technologies, and uphold the highest standards of service and quality that have become
+                    synonymous with our name. We are not merely trading steel; we are forging partnerships, building
+                    communities, and contributing to the sustainable development of nations.
+                  </p>
+
+                  <p className="font-medium">
+                    I extend my deepest appreciation for your continued trust, confidence, and partnership. Together, we
+                    will achieve unprecedented milestones and create lasting value for all our stakeholders in the years
+                    to come.
+                  </p>
+
+                  {/* Signature */}
+                  <div className="pt-8 mt-8 border-t-2 border-gray-200 dark:border-gray-700">
+                    <p className="text-lg font-light mb-3">With warm regards and respect,</p>
+                    <p className="text-3xl font-bold text-[#B91C1C] mb-1">Mostafa Masre</p>
+                    <p className="text-base text-gray-600 dark:text-gray-400">Chairman & Chief Executive Officer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Mission & Vision */}
-        <section className="mb-20">
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 text-center dark:bg-gray-800 border-2 hover:border-[#B91C1C]/30 transition-all duration-300">
-              <Eye className="w-16 h-16 text-[#B91C1C] mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                To be the global leader in steel trading, recognized for sustainable solutions, 
-                innovation, and long-term partnerships that create value for all stakeholders.
+        <section className="mb-32">
+          <div className="grid md:grid-cols-2 gap-10">
+            <Card className="p-10 text-center border-0 shadow-2xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/80 hover:shadow-3xl transition-all duration-500 transform hover:scale-105">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] rounded-full mb-8 shadow-xl">
+                <Eye className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed font-light">
+                To be the global leader in steel trading, recognized for sustainable solutions, innovation, and
+                long-term partnerships that create value for all stakeholders.
               </p>
             </Card>
-            <Card className="p-8 text-center dark:bg-gray-800 border-2 hover:border-[#B91C1C]/30 transition-all duration-300">
-              <Target className="w-16 h-16 text-[#B91C1C] mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                To deliver exceptional steel trading services through strategic partnerships, 
-                advanced logistics, and unwavering commitment to quality and sustainability.
+            <Card className="p-10 text-center border-0 shadow-2xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/80 hover:shadow-3xl transition-all duration-500 transform hover:scale-105">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] rounded-full mb-8 shadow-xl">
+                <Target className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-6">Our Mission</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed font-light">
+                To deliver exceptional steel trading services through strategic partnerships, advanced logistics, and
+                unwavering commitment to quality and sustainability.
               </p>
             </Card>
           </div>
         </section>
 
         {/* Values */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Values</h2>
-            <div className="w-16 h-1 bg-[#B91C1C] mx-auto"></div>
+        <section className="mb-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Core Values</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto rounded-full animate-gradient-x"></div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="p-6 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 dark:bg-gray-800"
+                className="p-8 text-center border-0 shadow-xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/80 hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
               >
-                <value.icon className="w-12 h-12 text-[#B91C1C] mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-3">{value.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{value.description}</p>
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] rounded-full mb-6 shadow-lg">
+                  <value.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-[#B91C1C]">{value.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-light">{value.description}</p>
               </Card>
             ))}
           </div>
         </section>
 
         {/* Timeline */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Journey</h2>
-            <div className="w-16 h-1 bg-[#B91C1C] mx-auto"></div>
+        <section className="mb-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Journey of Excellence</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto rounded-full animate-gradient-x"></div>
           </div>
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#B91C1C] opacity-30"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#B91C1C] via-[#DC2626] to-[#EF4444] opacity-30 rounded-full"></div>
             {milestones.map((milestone, index) => (
               <div
                 key={index}
-                className={`flex items-center mb-8 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+                className={`flex items-center mb-12 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
               >
-                <div className={`w-1/2 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
-                  <Card className="p-6 dark:bg-gray-800 hover:shadow-lg transition-all duration-300">
-                    <div className="text-2xl font-bold text-[#B91C1C] mb-2">{milestone.year}</div>
-                    <h3 className="text-xl font-bold mb-2">{milestone.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-300">{milestone.description}</p>
+                <div className={`w-1/2 ${index % 2 === 0 ? "pr-12 text-right" : "pl-12 text-left"}`}>
+                  <Card className="p-8 border-0 shadow-xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/80 hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
+                    <div className="text-3xl font-bold text-[#B91C1C] mb-3">{milestone.year}</div>
+                    <h3 className="text-2xl font-bold mb-3">{milestone.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-light">
+                      {milestone.description}
+                    </p>
                   </Card>
                 </div>
-                <div className="w-4 h-4 bg-[#B91C1C] rounded-full relative z-10"></div>
+                <div className="w-6 h-6 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] rounded-full relative z-10 shadow-xl"></div>
                 <div className="w-1/2"></div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Team */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
-            <div className="w-16 h-1 bg-[#B91C1C] mx-auto"></div>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card
-                key={index}
-                className="text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 dark:bg-gray-800"
-              >
-                <div className="p-6">
-                  <Image
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-[#B91C1C] font-semibold mb-3">{member.position}</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">{member.description}</p>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </section>
-
         {/* Stats */}
-        <section className="bg-[#B91C1C] rounded-lg p-12 text-white text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-4xl font-bold mb-2">15+</div>
-              <div className="text-red-100">Years Experience</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-red-100">Countries Served</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">1000+</div>
-              <div className="text-red-100">Clients Served</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">24/7</div>
-              <div className="text-red-100">Customer Support</div>
+        <section className="relative overflow-hidden rounded-3xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444]"></div>
+          <div className="absolute inset-0 opacity-10">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
+                backgroundSize: "50px 50px",
+              }}
+            ></div>
+          </div>
+          <div className="relative p-16 text-white text-center">
+            <h2 className="text-4xl font-bold mb-4">Our Global Impact</h2>
+            <p className="text-red-100 mb-12 text-lg">Delivering excellence across continents</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+              <div className="transform hover:scale-110 transition-all duration-500">
+                <div className="text-6xl font-bold mb-3 animate-counter">15+</div>
+                <div className="text-red-100 text-lg">Years Experience</div>
+              </div>
+              <div className="transform hover:scale-110 transition-all duration-500">
+                <div className="text-6xl font-bold mb-3 animate-counter">50+</div>
+                <div className="text-red-100 text-lg">Countries Served</div>
+              </div>
+              <div className="transform hover:scale-110 transition-all duration-500">
+                <div className="text-6xl font-bold mb-3 animate-counter">1000+</div>
+                <div className="text-red-100 text-lg">Clients Served</div>
+              </div>
+              <div className="transform hover:scale-110 transition-all duration-500">
+                <div className="text-6xl font-bold mb-3 animate-counter">24/7</div>
+                <div className="text-red-100 text-lg">Customer Support</div>
+              </div>
             </div>
           </div>
         </section>
