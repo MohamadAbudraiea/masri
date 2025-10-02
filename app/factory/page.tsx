@@ -56,7 +56,7 @@ export default function FactoryPage() {
       step: "03",
       title: "Quality Testing",
       description: "Comprehensive testing and inspection to ensure product specifications",
-      image: "/steel-quality-testing-laboratory.jpg",
+      image: "/quality-testing.jpg",
     },
     {
       step: "04",
@@ -66,14 +66,7 @@ export default function FactoryPage() {
     },
   ]
 
-  const certifications = [
-    { name: "ISO 9001:2015", description: "Quality Management System" },
-    { name: "ISO 14001", description: "Environmental Management" },
-    { name: "OHSAS 18001", description: "Occupational Health & Safety" },
-    { name: "API 5L", description: "Pipeline Steel Specification" },
-    { name: "ASTM Standards", description: "American Society for Testing Materials" },
-    { name: "EN Standards", description: "European Conformity Standards" },
-  ]
+
 
   return (
     <div className="min-h-screen py-20">
@@ -169,27 +162,7 @@ export default function FactoryPage() {
           </div>
         </section>
 
-        {/* Certifications */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Certifications & Standards</h2>
-            <div className="w-16 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Our commitment to quality is validated by international certifications and adherence to global standards.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certifications.map((cert, index) => (
-              <Card
-                key={index}
-                className="p-6 text-center hover:shadow-lg transition-all duration-300 dark:bg-gray-800"
-              >
-                <Badge className="bg-[#B91C1C] text-white mb-4 text-lg px-4 py-2">{cert.name}</Badge>
-                <p className="text-gray-600 dark:text-gray-300">{cert.description}</p>
-              </Card>
-            ))}
-          </div>
-        </section>
+     
 
         {/* Factory Stats */}
         <section className="mb-20">

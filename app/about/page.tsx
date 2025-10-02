@@ -1,8 +1,10 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Card } from "@/components/ui/card"
-import { Users, Globe, Target, Eye, Heart } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Users, Globe, Target, Eye, Heart, ArrowRight } from "lucide-react"
 
 export default function AboutPage() {
   const milestones = [
@@ -20,8 +22,8 @@ export default function AboutPage() {
     },
     {
       year: "2024",
-      title: "Sustainability Initiative",
-      description: "Launched green steel trading program to promote eco-friendly solutions",
+      title: "Expansion into the MENA region",
+      description: "strengthening our presence across key Middle Eastern and North African markets.",
     },
   ]
 
@@ -45,6 +47,39 @@ export default function AboutPage() {
       icon: Globe,
       title: "Global Vision",
       description: "We maintain a strong presence in Africa and the Middle East while expanding globally.",
+    },
+  ]
+
+  const companies = [
+    {
+      name: "Sesame Trading",
+      image: "/sesame-seeds-premium.jpg",
+      description:
+        "We source and trade premium sesame seeds from trusted global suppliers, ensuring top quality for food and industrial applications.",
+    },
+    {
+      name: "Dates",
+      image: "/fresh-dates-medjool.jpg",
+      description:
+        "Supplying high-grade dates across MENA and international markets, known for their natural sweetness and nutritional value.",
+    },
+    {
+      name: "Arabic Gum",
+      image: "/arabic-gum-acacia.jpg",
+      description:
+        "Providing authentic Arabic gum, widely used in food, beverages, and pharmaceutical industries for its unique natural properties.",
+    },
+    {
+      name: "Peanuts",
+      image: "/premium-peanuts.jpg",
+      description:
+        "Trusted supplier of high-quality peanuts for food manufacturing, snacking, and export markets with strict quality standards.",
+    },
+    {
+      name: "Watermelon Seeds",
+      image: "/watermelon-seeds-roasted.jpg",
+      description:
+        "Delivering carefully selected watermelon seeds, popular in international markets for snacking and culinary uses.",
     },
   ]
 
@@ -110,6 +145,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
 
         {/* Chairman's Letter - Redesigned Simple & Clean */}
         <section className="mb-32">
@@ -203,6 +239,91 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Our Companies Section */}
+        <section className="mb-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Regarding To Masregroup</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto mb-8 rounded-full animate-gradient-x"></div>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light">
+              Beyond steel trading, MASRE GROUP has expanded into premium agricultural commodities, serving global
+              markets with excellence and reliability.
+            </p>
+          </div>
+
+          {/* First Row - 3 Cards */}
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            {companies.slice(0, 3).map((company, index) => (
+              <Card
+                key={index}
+                className="group overflow-hidden border-0 shadow-xl backdrop-blur-sm bg-white/90 dark:bg-gray-800/90 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src={company.image || "/placeholder.svg"}
+                    alt={company.name}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-2xl font-bold text-white mb-1">{company.name}</h3>
+                  </div>
+                </div>
+
+                <div className="p-6">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 min-h-[120px]">
+                    {company.description}
+                  </p>
+                  <Link href="/contact" scroll={true}>
+                    <Button className="w-full bg-gradient-to-r from-[#B91C1C] to-[#DC2626] hover:from-[#991B1B] hover:to-[#B91C1C] text-white transition-all duration-300 group/btn">
+                      Show More
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                    </Button>
+                  </Link>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          {/* Second Row - 2 Cards (Centered) */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {companies.slice(3, 5).map((company, index) => (
+              <Card
+                key={index}
+                className="group overflow-hidden border-0 shadow-xl backdrop-blur-sm bg-white/90 dark:bg-gray-800/90 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 animate-fade-in-up"
+                style={{ animationDelay: `${(index + 3) * 0.1}s` }}
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src={company.image || "/placeholder.svg"}
+                    alt={company.name}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-2xl font-bold text-white mb-1">{company.name}</h3>
+                  </div>
+                </div>
+
+                <div className="p-6">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 min-h-[120px]">
+                    {company.description}
+                  </p>
+                  <Link href="/contact" scroll={true}>
+                    <Button className="w-full bg-gradient-to-r from-[#B91C1C] to-[#DC2626] hover:from-[#991B1B] hover:to-[#B91C1C] text-white transition-all duration-300 group/btn">
+                      Show More
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                    </Button>
+                  </Link>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </section>
         {/* Mission & Vision */}
         <section className="mb-32">
           <div className="grid md:grid-cols-2 gap-10">

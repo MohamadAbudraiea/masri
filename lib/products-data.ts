@@ -10,6 +10,23 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 15,
+    name: "Wire Rode",
+    category: "wire",
+    image: "/o2.png",
+    description:
+      "High-quality steel wire rods supplied in coils, widely used in construction, automotive, and manufacturing industries. Known for excellent tensile strength, ductility, and weldability, making them ideal for producing wires, nails, springs, and reinforcement materials.",
+    specifications: [
+      "Thickness: 6mm - 20mm",
+      "Width: 400mm - 800mm",
+      "Length: 6m - 18m",
+      "Standard: JIS A5523, EN 10248, ASTM A328",
+      "Type: U-type interlocking",
+      "Application: Retaining walls, waterfront, foundations",
+    ],
+    price: "Contact for pricing",
+  },
+  {
     id: 1,
     name: "Hot Rolled Coil (HRC)",
     category: "sheets",
@@ -137,7 +154,7 @@ export const products: Product[] = [
     specifications: [
       "Standard: ASTM, JIS, DIN, GB, AISI, EN",
       "Size: 80×40×20×2.5 (3.925 kg/m)",
-      "Size: 80×40×20×3 (4.71 kg/m)",
+      ": 80×40×20×3 (4.71 kg/m)",
       "Material: Q235, ASTM A36, S235JR",
       "Length: 6m - 12m",
       "Terms Of Trade: EXW, FOB, CRF, CIF, CNF or others",
@@ -236,6 +253,23 @@ export const products: Product[] = [
     image: "/n4.png",
     description:
       "Engineered U-shaped steel sheet piles designed for retaining walls, waterfront structures, and deep foundation projects. Advanced interlocking system providing superior structural stability and water resistance.",
+    specifications: [
+      "Thickness: 6mm - 20mm",
+      "Width: 400mm - 800mm",
+      "Length: 6m - 18m",
+      "Standard: JIS A5523, EN 10248, ASTM A328",
+      "Type: U-type interlocking",
+      "Application: Retaining walls, waterfront, foundations",
+    ],
+    price: "Contact for pricing",
+  },
+  {
+    id: 16,
+    name: "Billets",
+    category: "rebar",
+    image: "/b3.png",
+    description:
+      "Steel billets are semi-finished products with a square or rectangular cross-section, primarily used as raw material for manufacturing rebar, wire rods, structural sections, and other long steel products. They are produced through continuous casting or rolling and provide the foundation for high-strength construction and industrial applications.",
     specifications: [
       "Thickness: 6mm - 20mm",
       "Width: 400mm - 800mm",

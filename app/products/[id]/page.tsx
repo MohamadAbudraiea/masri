@@ -185,7 +185,7 @@ export default function ProductDetailPage() {
             </div>
           </div>
 
-          {/* Luxury Specifications Table */}
+          {/* Luxury Specifications Table - Fixed Responsive */}
           <div className="mb-24 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
@@ -196,12 +196,17 @@ export default function ProductDetailPage() {
 
             <Card className="border-0 shadow-2xl overflow-hidden backdrop-blur-sm bg-white/80 dark:bg-gray-800/80">
               <CardContent className="p-0">
-                <div className="overflow-x-auto">
+                {/* Desktop Table */}
+                <div className="hidden md:block overflow-x-auto">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444]">
-                        <th className="px-8 py-6 text-left text-xl font-bold text-white">Parameter</th>
-                        <th className="px-8 py-6 text-left text-xl font-bold text-white">Specification</th>
+                        <th className="px-8 py-6 text-left text-xl font-bold text-white whitespace-nowrap">
+                          Parameter
+                        </th>
+                        <th className="px-8 py-6 text-left text-xl font-bold text-white whitespace-nowrap">
+                          Specification
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -212,19 +217,42 @@ export default function ProductDetailPage() {
                             key={index}
                             className={`${
                               index % 2 === 0 ? "bg-gray-50 dark:bg-gray-700/50" : "bg-white dark:bg-gray-800/50"
-                            } hover:bg-[#B91C1C]/5 dark:hover:bg-[#B91C1C]/20 transition-all duration-300 transform hover:scale-[1.01]`}
+                            } hover:bg-[#B91C1C]/5 dark:hover:bg-[#B91C1C]/20 transition-all duration-300`}
                           >
                             <td className="px-8 py-6 font-bold text-gray-900 dark:text-white border-b border-gray-200/50 dark:border-gray-600/50 text-lg">
                               {param}
                             </td>
                             <td className="px-8 py-6 text-gray-700 dark:text-gray-300 border-b border-gray-200/50 dark:border-gray-600/50 text-lg">
-                              {value}
+                              {value || param}
                             </td>
                           </tr>
                         )
                       })}
                     </tbody>
                   </table>
+                </div>
+
+                {/* Mobile/Tablet Stacked Layout */}
+                <div className="md:hidden">
+                  <div className="bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] px-6 py-4">
+                    <h3 className="text-xl font-bold text-white">Technical Specifications</h3>
+                  </div>
+                  <div className="divide-y divide-gray-200 dark:divide-gray-700">
+                    {product.specifications.map((spec, index) => {
+                      const [param, value] = spec.split(":")
+                      return (
+                        <div
+                          key={index}
+                          className={`px-6 py-5 ${
+                            index % 2 === 0 ? "bg-gray-50 dark:bg-gray-700/50" : "bg-white dark:bg-gray-800/50"
+                          }`}
+                        >
+                          <div className="font-bold text-gray-900 dark:text-white text-base mb-2">{param}</div>
+                          <div className="text-gray-700 dark:text-gray-300 text-base">{value || param}</div>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               </CardContent>
             </Card>
