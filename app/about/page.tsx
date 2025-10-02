@@ -55,31 +55,30 @@ export default function AboutPage() {
       name: "Sesame Trading",
       image: "/sesame-seeds-premium.jpg",
       description:
-        "We source and trade premium sesame seeds from trusted global suppliers, ensuring top quality for food and industrial applications.",
+        "We source and trade premium sesame seeds from trusted suppliers in Sudan, ensuring top quality for food and industrial applications.",
     },
     {
       name: "Dates",
       image: "/fresh-dates-medjool.jpg",
       description:
-        "Supplying high-grade dates across MENA and international markets, known for their natural sweetness and nutritional value.",
+        "Supplying high-grade dates from Jordan across MENA and international markets, known for their natural sweetness and nutritional value.",
     },
     {
       name: "Arabic Gum",
       image: "/arabic-gum-acacia.jpg",
       description:
-        "Providing authentic Arabic gum, widely used in food, beverages, and pharmaceutical industries for its unique natural properties.",
-    },
+      "Providing authentic Arabic gum from Sudan, widely used in food, beverages, and pharmaceutical industries for its unique natural properties"    },
     {
       name: "Peanuts",
       image: "/premium-peanuts.jpg",
       description:
-        "Trusted supplier of high-quality peanuts for food manufacturing, snacking, and export markets with strict quality standards.",
+        "Trusted supplier of high-quality peanuts from Sudan for food manufacturing, snacking, and export markets with strict quality standards.",
     },
     {
       name: "Watermelon Seeds",
       image: "/watermelon-seeds-roasted.jpg",
       description:
-        "Delivering carefully selected watermelon seeds, popular in international markets for snacking and culinary uses.",
+        "Delivering carefully selected watermelon seeds from Sudan, popular in international markets for snacking and culinary uses.",
     },
   ]
 

@@ -67,7 +67,7 @@ export default function HomePage() {
           "Strategic partnerships with leading steel manufacturers",
           "Advanced logistics and supply chain management",
           "Comprehensive quality assurance programs",
-          "Strong relationships with major customers, including Samir Qarman",
+          "Strong relationships with major customers",
           "Factory presence in Africa (Sudan) to serve regional markets",
           "Expanding customer base across Africa",
           "Diversified business operations, including a grain trading company",
@@ -90,10 +90,10 @@ export default function HomePage() {
             features: ["Diameter: 15mm - 500mm", "Wall Thickness: 1.5mm - 12mm", "Zinc Coating: 120-500 g/m²"],
           },
           {
-            name: "C-Shaped Steel Channels",
-            description: "C-channel structural steel used for framing, support beams, and construction.",
-            image: "/j3.png",
-            category: "Structural Steel",
+            name: "Wire rode",
+            description: "High-quality steel wire rods in coils, offering strength, ductility, and weldability for construction, automotive, and manufacturing applications.",
+            image: "/o2.png",
+            category: "Wire",
             features: ["Size: 50mm x 30mm - 300mm x 90mm", "Length: 6m - 12m", "Grade: Q235, ASTM A36"],
           },
           {
