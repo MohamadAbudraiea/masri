@@ -741,10 +741,10 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-white mb-4">{t.contact.phone}</h3>
                 <div className="space-y-2">
                   <a
-                    href="https://wa.me/962790688222"
+                    href="https://wa.me/962790079442"
                     className="block text-red-100 hover:text-white transition-colors duration-300 text-lg font-medium"
                   >
-                    +962 790 688 222
+                    +962 790 079442
                   </a>
                 </div>
               </div>
