@@ -25,19 +25,11 @@ import { Badge } from "@/components/ui/badge"
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false)
   const [language, setLanguage] = useState<"en" | "ar">("en")
-  const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
   useEffect(() => {
     setIsVisible(true)
     const savedLanguage = localStorage.getItem("language")
     if (savedLanguage) setLanguage(savedLanguage as "en" | "ar")
-
-    // Auto-rotate testimonials
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % 3)
-    }, 5000)
-
-    return () => clearInterval(interval)
   }, [])
 
   const content = {
@@ -91,7 +83,8 @@ export default function HomePage() {
           },
           {
             name: "Wire rode",
-            description: "High-quality steel wire rods in coils, offering strength, ductility, and weldability for construction, automotive, and manufacturing applications.",
+            description:
+              "High-quality steel wire rods in coils, offering strength, ductility, and weldability for construction, automotive, and manufacturing applications.",
             image: "/o2.png",
             category: "Wire",
             features: ["Size: 50mm x 30mm - 300mm x 90mm", "Length: 6m - 12m", "Grade: Q235, ASTM A36"],
@@ -145,39 +138,6 @@ export default function HomePage() {
               "Expert technical consultation and support services to help you select the right steel products for your specific applications.",
             icon: Users,
             features: ["Expert Consultation", "Technical Specs", "Application Support"],
-          },
-        ],
-      },
-      testimonials: {
-        title: "What Our Clients Say",
-        subtitle: "Trusted by Industry Leaders Worldwide",
-        items: [
-          {
-            name: "Ahmed Al-Rashid",
-            position: "Construction Director",
-            company: "Gulf Construction Ltd.",
-            content:
-              "MASRE GROUP has been our trusted steel supplier for over 8 years. Their commitment to quality and timely delivery has been instrumental in our project successes.",
-            rating: 5,
-            image: "/client-testimonial-1.jpg",
-          },
-          {
-            name: "Sarah Johnson",
-            position: "Procurement Manager",
-            company: "International Steel Corp.",
-            content:
-              "The quality of steel products from MASRE GROUP consistently exceeds our expectations. Their professional service and competitive pricing make them our preferred partner.",
-            rating: 5,
-            image: "/client-testimonial-2.jpg",
-          },
-          {
-            name: "Mohamed Hassan",
-            position: "Project Manager",
-            company: "Middle East Infrastructure",
-            content:
-              "Working with MASRE GROUP has transformed our supply chain efficiency. Their expertise and reliability have helped us complete projects ahead of schedule.",
-            rating: 5,
-            image: "/client-testimonial-3.jpg",
           },
         ],
       },
@@ -328,7 +288,7 @@ export default function HomePage() {
             features: ["التوريد العالمي", "ضمان الجودة", "أسعار تنافسية"],
           },
           {
-            title: "الخدما�� اللوجستية والتوزيع",
+            title: "الخدمات اللوجستية والتوزيع",
             description:
               "شبكة لوجستية متقدمة تضمن التسليم في الوقت المناسب لمنتجات الصلب إلى موقعك مع التتبع الكامل وتغطية التأمين.",
             icon: Truck,
@@ -347,39 +307,6 @@ export default function HomePage() {
               "خدمات الاستشارة والدعم الفني المتخصص لمساعدتك في اختيار منتجات الصلب المناسبة لتطبيقاتك المحددة.",
             icon: Users,
             features: ["استشارة خبراء", "المواصفات الفنية", "دعم التطبيق"],
-          },
-        ],
-      },
-      testimonials: {
-        title: "ما يقوله عملاؤنا",
-        subtitle: "موثوق من قبل قادة الصناعة في جميع أنحاء العالم",
-        items: [
-          {
-            name: "أحمد الراشد",
-            position: "مدير البناء",
-            company: "شركة الخليج للإنشاءات المحدودة",
-            content:
-              "مجموعة مصري كانت مورد الصلب الموثوق لدينا لأكثر من 8 سنوات. التزامهم بالجودة والتسليم في الوقت المناسب كان أساسياً في نجاح مشاريعنا.",
-            rating: 5,
-            image: "/client-testimonial-1.jpg",
-          },
-          {
-            name: "سارة جونسون",
-            position: "مدير المشتريات",
-            company: "شركة الصلب الدولية",
-            content:
-              "جودة منتجات الصلب من مجموعة مصري تتجاوز توقعاتنا باستمرار. خدمتهم المهنية وأسعارهم التنافسية تجعلهم شريكنا المفضل.",
-            rating: 5,
-            image: "/client-testimonial-2.jpg",
-          },
-          {
-            name: "محمد حسن",
-            position: "مدير المشروع",
-            company: "البنية التحتية للشرق الأوسط",
-            content:
-              "العمل مع مجموعة مصري حول كفاءة سلسلة التوريد لدينا. خبرتهم وموثوقيتهم ساعدونا في إكمال المشاريع قبل الموعد المحدد.",
-            rating: 5,
-            image: "/client-testimonial-3.jpg",
           },
         ],
       },
@@ -602,8 +529,6 @@ export default function HomePage() {
         </div>
       </section>
 
-     
-
       {/* Enhanced Stats Section with Counters */}
       <section className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#B91C1C]/5 to-transparent"></div>
@@ -666,15 +591,7 @@ export default function HomePage() {
                       {product.category}
                     </Badge>
                   </div>
-                  <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="flex flex-wrap gap-1">
-                      {product.features.map((feature, idx) => (
-                        <Badge key={idx} variant="secondary" className="text-xs bg-white/90 text-gray-800">
-                          {feature}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+                 
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-3 group-hover:text-[#B91C1C] transition-colors duration-300 line-clamp-2">
@@ -683,14 +600,7 @@ export default function HomePage() {
                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
                     {product.description}
                   </p>
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <Button
-                      size="sm"
-                      className="bg-gradient-to-r from-[#B91C1C] to-[#DC2626] text-white hover:shadow-lg"
-                    >
-                      Learn More
-                    </Button>
-                  </div>
+
                 </CardContent>
               </Card>
             ))}
@@ -705,7 +615,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
- {/* Enhanced Features Section */}
+      {/* Enhanced Features Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -763,13 +673,15 @@ export default function HomePage() {
                         {service.title}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">{service.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {service.features.map((feature, idx) => (
-                          <Badge key={idx} variant="outline" className="text-xs border-[#B91C1C]/30 text-[#B91C1C]">
-                            {feature}
-                          </Badge>
-                        ))}
-                      </div>
+                      {service.features && (
+                        <div className="flex flex-wrap gap-2">
+                          {service.features.map((feature, idx) => (
+                            <Badge key={idx} variant="outline" className="text-xs border-[#B91C1C]/30 text-[#B91C1C]">
+                              {feature}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
@@ -834,7 +746,6 @@ export default function HomePage() {
                   >
                     +962 790 688 222
                   </a>
-                  
                 </div>
               </div>
 
@@ -850,7 +761,6 @@ export default function HomePage() {
                   >
                     sales@masregroup.com
                   </a>
-                  
                 </div>
               </div>
 
