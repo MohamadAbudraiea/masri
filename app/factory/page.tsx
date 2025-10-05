@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { Factory, Globe, Recycle, MapPin, Handshake, Rocket } from "lucide-react"
 
 export default function FactoryPage() {
@@ -66,20 +65,18 @@ export default function FactoryPage() {
     },
   ]
 
-
-
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Our <span className="text-[#B91C1C]">Manufacturing</span> Excellence
+            Our <span className="text-[#B91C1C]">Metal Forming Factory</span>
           </h1>
           <div className="w-24 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Discover our world-class manufacturing facilities and processes that deliver premium steel products to
-            global markets.
+            Discover our state-of-the-art metal forming factory and advanced manufacturing processes that deliver
+            premium steel products to global markets.
           </p>
         </div>
 
@@ -87,16 +84,16 @@ export default function FactoryPage() {
         <div className="mb-20">
           <div className="relative rounded-lg overflow-hidden shadow-2xl">
             <Image
-              src="/modern-steel-factory-manufacturing-facility.jpg"
-              alt="MASRE GROUP Manufacturing Facility"
+              src="/steel-processing-machinery-factory.jpg"
+              alt="MASRE GROUP Metal Forming Factory"
               width={1200}
               height={500}
               className="w-full h-96 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
               <div className="text-white p-8">
-                <h2 className="text-3xl font-bold mb-4">State-of-the-Art Facilities</h2>
-                <p className="text-xl">Modern manufacturing complex in Amman, Jordan</p>
+                <h2 className="text-3xl font-bold mb-4">Advanced Metal Forming Facility</h2>
+                <p className="text-xl">Modern manufacturing complex in Sudan</p>
               </div>
             </div>
           </div>
@@ -145,7 +142,7 @@ export default function FactoryPage() {
                     alt={process.title}
                     width={500}
                     height={300}
-                    className="rounded-lg shadow-lg w-full h-64 object-cover"
+                    className="rounded-lg w-full object-cover h-[254px] shadow-xl"
                   />
                 </div>
                 <div className="lg:w-1/2">
@@ -161,8 +158,6 @@ export default function FactoryPage() {
             ))}
           </div>
         </section>
-
-     
 
         {/* Factory Stats */}
         <section className="mb-20">

@@ -67,7 +67,8 @@ export default function AboutPage() {
       name: "Arabic Gum",
       image: "/arabic-gum-acacia.jpg",
       description:
-      "Providing authentic Arabic gum from Sudan, widely used in food, beverages, and pharmaceutical industries for its unique natural properties"    },
+        "Providing authentic Arabic gum from Sudan, widely used in food, beverages, and pharmaceutical industries for its unique natural properties.",
+    },
     {
       name: "Peanuts",
       image: "/premium-peanuts.jpg",
@@ -79,6 +80,12 @@ export default function AboutPage() {
       image: "/watermelon-seeds-roasted.jpg",
       description:
         "Delivering carefully selected watermelon seeds from Sudan, popular in international markets for snacking and culinary uses.",
+    },
+    {
+      name: "Olive Oil",
+      image: "/premium-olive-oil-jordan.jpg",
+      description:
+        "Supplying premium extra virgin olive oil from Jordan, renowned for its exceptional quality, rich flavor, and health benefits for international markets.",
     },
   ]
 
@@ -144,7 +151,6 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-
 
         {/* Chairman's Letter - Redesigned Simple & Clean */}
         <section className="mb-32">
@@ -286,9 +292,9 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Second Row - 2 Cards (Centered) */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {companies.slice(3, 5).map((company, index) => (
+          {/* Second Row - 3 Cards (Centered) */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {companies.slice(3, 6).map((company, index) => (
               <Card
                 key={index}
                 className="group overflow-hidden border-0 shadow-xl backdrop-blur-sm bg-white/90 dark:bg-gray-800/90 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 animate-fade-in-up"
@@ -323,6 +329,7 @@ export default function AboutPage() {
             ))}
           </div>
         </section>
+
         {/* Mission & Vision */}
         <section className="mb-32">
           <div className="grid md:grid-cols-2 gap-10">
