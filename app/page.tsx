@@ -834,12 +834,7 @@ export default function HomePage() {
                   >
                     +962 790 688 222
                   </a>
-                  <a
-                    href="https://wa.me/249960006666"
-                    className="block text-red-100 hover:text-white transition-colors duration-300 text-lg font-medium"
-                  >
-                    +249 960 00 6666
-                  </a>
+                  
                 </div>
               </div>
 
@@ -850,17 +845,12 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-white mb-4">{t.contact.email}</h3>
                 <div className="space-y-2">
                   <a
-                    href="mailto:mostafamasre@masregroup.com"
+                    href="mailto:sales@masregroup.com"
                     className="block text-red-100 hover:text-white transition-colors duration-300 text-lg font-medium"
                   >
-                    mostafamasre@masregroup.com
+                    sales@masregroup.com
                   </a>
-                  <a
-                    href="mailto:regional.manager@masregroup.com"
-                    className="block text-red-100 hover:text-white transition-colors duration-300 text-lg font-medium"
-                  >
-                    regional.manager@masregroup.com
-                  </a>
+                  
                 </div>
               </div>
 

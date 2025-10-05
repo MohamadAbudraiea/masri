@@ -140,16 +140,10 @@ export default function Footer({ language }: FooterProps) {
                 <div>
                   <p className="text-sm font-semibold text-gray-200 mb-1">{t.contactInfo.phone}</p>
                   <a
-                    href="https://wa.me/962790688222"
+                    href="https://wa.me/962790079442"
                     className="text-gray-300 hover:text-[#B91C1C] transition-colors text-sm block"
                   >
-                    +962 790 688 222
-                  </a>
-                  <a
-                    href="https://wa.me/249960006666"
-                    className="text-gray-300 hover:text-[#B91C1C] transition-colors text-sm block"
-                  >
-                    +249 960 00 6666
+                    +962 790 079 442
                   </a>
                 </div>
               </div>
@@ -159,10 +153,10 @@ export default function Footer({ language }: FooterProps) {
                 <div>
                   <p className="text-sm font-semibold text-gray-200 mb-1">{t.contactInfo.email}</p>
                   <a
-                    href="mailto:mostafamasre@masregroup.com"
+                    href="mailto:sales@masregroup.com"
                     className="text-gray-300 hover:text-[#B91C1C] transition-colors text-sm block"
                   >
-                    mostafamasre@masregroup.com
+                    sales@masregroup.com
                   </a>
                 </div>
               </div>

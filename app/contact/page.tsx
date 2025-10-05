@@ -150,17 +150,12 @@ export default function ContactPage() {
                     <h3 className="font-semibold mb-2">Phone Numbers</h3>
                     <div className="space-y-1">
                       <a
-                        href="https://wa.me/962790688222"
+                        href="https://wa.me/962790079422"
                         className="block text-gray-600 dark:text-gray-300 hover:text-[#B91C1C] transition-colors"
                       >
-                        +962 790 688 222 (WhatsApp)
+                        +962 79007 9422
                       </a>
-                      <a
-                        href="https://wa.me/249960006666"
-                        className="block text-gray-600 dark:text-gray-300 hover:text-[#B91C1C] transition-colors"
-                      >
-                        +249 960 00 6666 (WhatsApp)
-                      </a>
+                      
                     </div>
                   </div>
                 </div>
@@ -173,17 +168,12 @@ export default function ContactPage() {
                     <h3 className="font-semibold mb-2">Email Addresses</h3>
                     <div className="space-y-1">
                       <a
-                        href="mailto:mostafamasre@masregroup.com"
+                        href="mailto:sales@masregroup.com"
                         className="block text-gray-600 dark:text-gray-300 hover:text-[#B91C1C] transition-colors"
                       >
-                        mostafamasre@masregroup.com
+                        sales@masregroup.com
                       </a>
-                      <a
-                        href="mailto:regional.manager@masregroup.com"
-                        className="block text-gray-600 dark:text-gray-300 hover:text-[#B91C1C] transition-colors"
-                      >
-                        regional.manager@masregroup.com
-                      </a>
+                      
                     </div>
                   </div>
                 </div>
