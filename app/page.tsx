@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Phone,
   Mail,
@@ -18,19 +18,19 @@ import {
   Factory,
   Truck,
   CheckCircle,
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export default function HomePage() {
-  const [isVisible, setIsVisible] = useState(false)
-  const [language, setLanguage] = useState<"en" | "ar">("en")
+  const [isVisible, setIsVisible] = useState(false);
+  const [language, setLanguage] = useState<"en" | "ar">("en");
 
   useEffect(() => {
-    setIsVisible(true)
-    const savedLanguage = localStorage.getItem("language")
-    if (savedLanguage) setLanguage(savedLanguage as "en" | "ar")
-  }, [])
+    setIsVisible(true);
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) setLanguage(savedLanguage as "en" | "ar");
+  }, []);
 
   const content = {
     en: {
@@ -45,10 +45,30 @@ export default function HomePage() {
         watchVideo: "Watch Our Story",
       },
       stats: [
-        { icon: TrendingUp, number: "15+", label: "Years Experience", description: "Industry Leadership" },
-        { icon: Globe, number: "50+", label: "Countries Served", description: "Global Presence" },
-        { icon: Award, number: "1000+", label: "Deliveries Completed", description: "Successful Shipments" },
-        { icon: Phone, number: "24/7", label: "Customer Support", description: "Always Available" },
+        {
+          icon: TrendingUp,
+          number: "15+",
+          label: "Years Experience",
+          description: "Industry Leadership",
+        },
+        {
+          icon: Globe,
+          number: "50+",
+          label: "Countries Served",
+          description: "Global Presence",
+        },
+        {
+          icon: Award,
+          number: "1000+",
+          label: "Deliveries Completed",
+          description: "Successful Shipments",
+        },
+        {
+          icon: Phone,
+          number: "24/7",
+          label: "Customer Support",
+          description: "Always Available",
+        },
       ],
       about: {
         title: "About MASRE GROUP",
@@ -79,7 +99,11 @@ export default function HomePage() {
               "High-quality galvanized iron pipes with excellent corrosion resistance, widely used in plumbing, construction, and industrial applications.",
             image: "/i4.png",
             category: "Pipes",
-            features: ["Diameter: 15mm - 500mm", "Wall Thickness: 1.5mm - 12mm", "Zinc Coating: 120-500 g/m²"],
+            features: [
+              "Diameter: 15mm - 500mm",
+              "Wall Thickness: 1.5mm - 12mm",
+              "Zinc Coating: 120-500 g/m²",
+            ],
           },
           {
             name: "Wire rode",
@@ -87,7 +111,11 @@ export default function HomePage() {
               "High-quality steel wire rods in coils, offering strength, ductility, and weldability for construction, automotive, and manufacturing applications.",
             image: "/o2.png",
             category: "Wire",
-            features: ["Size: 50mm x 30mm - 300mm x 90mm", "Length: 6m - 12m", "Grade: Q235, ASTM A36"],
+            features: [
+              "Size: 50mm x 30mm - 300mm x 90mm",
+              "Length: 6m - 12m",
+              "Grade: Q235, ASTM A36",
+            ],
           },
           {
             name: "Galvanized Iron (GI) Sheets",
@@ -95,7 +123,11 @@ export default function HomePage() {
               "Corrosion-resistant galvanized iron sheets for roofing, cladding, and industrial applications.",
             image: "/f3.png",
             category: "Steel Sheets",
-            features: ["Thickness: 0.3mm - 3mm", "Width: 600mm - 1500mm", "Zinc Coating: 60-275 g/m²"],
+            features: [
+              "Thickness: 0.3mm - 3mm",
+              "Width: 600mm - 1500mm",
+              "Zinc Coating: 60-275 g/m²",
+            ],
           },
           {
             name: "Galvanized Wire",
@@ -103,7 +135,11 @@ export default function HomePage() {
               "Durable galvanized steel wire with superior corrosion resistance for fencing, binding, and industrial applications.",
             image: "/a3.png",
             category: "Wire",
-            features: ["Diameter: 0.5mm - 6mm", "Zinc Coating: 40-300 g/m²", "Tensile Strength: 350-550 N/mm²"],
+            features: [
+              "Diameter: 0.5mm - 6mm",
+              "Zinc Coating: 40-300 g/m²",
+              "Tensile Strength: 350-550 N/mm²",
+            ],
           },
         ],
       },
@@ -116,14 +152,22 @@ export default function HomePage() {
             description:
               "Comprehensive steel trading services with worldwide sourcing capabilities and strategic partnerships across major steel-producing regions.",
             icon: Globe,
-            features: ["Global Sourcing", "Quality Assurance", "Competitive Pricing"],
+            features: [
+              "Global Sourcing",
+              "Quality Assurance",
+              "Competitive Pricing",
+            ],
           },
           {
             title: "Logistics & Distribution",
             description:
               "Advanced logistics network ensuring timely delivery of steel products to your location with full tracking and insurance coverage.",
             icon: Truck,
-            features: ["Worldwide Shipping", "Real-time Tracking", "Insurance Coverage"],
+            features: [
+              "Worldwide Shipping",
+              "Real-time Tracking",
+              "Insurance Coverage",
+            ],
           },
           {
             title: "Product Reliability",
@@ -137,7 +181,11 @@ export default function HomePage() {
             description:
               "Expert technical consultation and support services to help you select the right steel products for your specific applications.",
             icon: Users,
-            features: ["Expert Consultation", "Technical Specs", "Application Support"],
+            features: [
+              "Expert Consultation",
+              "Technical Specs",
+              "Application Support",
+            ],
           },
         ],
       },
@@ -221,10 +269,30 @@ export default function HomePage() {
         watchVideo: "شاهد قصتنا",
       },
       stats: [
-        { icon: TrendingUp, number: "15+", label: "سنة خبرة", description: "قيادة الصناعة" },
-        { icon: Globe, number: "50+", label: "دولة نخدمها", description: "حضور عالمي" },
-        { icon: Award, number: "1000+", label: "مشروع مكتمل", description: "تسليمات ناجحة" },
-        { icon: Phone, number: "24/7", label: "دعم العملاء", description: "متاح دائماً" },
+        {
+          icon: TrendingUp,
+          number: "15+",
+          label: "سنة خبرة",
+          description: "قيادة الصناعة",
+        },
+        {
+          icon: Globe,
+          number: "50+",
+          label: "دولة نخدمها",
+          description: "حضور عالمي",
+        },
+        {
+          icon: Award,
+          number: "1000+",
+          label: "مشروع مكتمل",
+          description: "تسليمات ناجحة",
+        },
+        {
+          icon: Phone,
+          number: "24/7",
+          label: "دعم العملاء",
+          description: "متاح دائماً",
+        },
       ],
       about: {
         title: "حول مجموعة مصري",
@@ -248,28 +316,32 @@ export default function HomePage() {
         items: [
           {
             name: "قضبان الصلب المسلح",
-            description: "قضبان الصلب المسلح عالية الجودة مصممة للقوة والمتانة الفائقة في مشاريع البناء",
+            description:
+              "قضبان الصلب المسلح عالية الجودة مصممة للقوة والمتانة الفائقة في مشاريع البناء",
             image: "/steel-rebar-reinforcement-bars.jpg",
             category: "صلب البناء",
             features: ["معيار الدرجة 60", "مقاوم للتآكل", "متوافق مع الزلازل"],
           },
           {
             name: "صلب H-Beam",
-            description: "صلب H-beam الهيكلي الممتاز المصمم للبناء الثقيل والتطبيقات الصناعية",
+            description:
+              "صلب H-beam الهيكلي الممتاز المصمم للبناء الثقيل والتطبيقات الصناعية",
             image: "/steel-h-beam-structural.jpg",
             category: "الصلب الهيكلي",
             features: ["قدرة تحمل عالية", "مهندس بدقة", "أحجام متعددة"],
           },
           {
             name: "ألواح الصلب المجلفن",
-            description: "ألواح الصلب المجلفن الفائقة المقاومة للتآكل مثالية للأسقف والتطبيقات الصناعية",
+            description:
+              "ألواح الصلب المجلفن الفائقة المقاومة للتآكل مثالية للأسقف والتطبيقات الصناعية",
             image: "/galvanized-steel-sheets.jpg",
             category: "ألواح الصلب",
             features: ["مطلي بالزنك", "مقاوم للطقس", "طويل الأمد"],
           },
           {
             name: "أنابيب الصلب السلسة",
-            description: "أنابيب الصلب السلسة عالية الأداء المصنعة وفقاً لمعايير API للتطبيقات الصناعية الحرجة",
+            description:
+              "أنابيب الصلب السلسة عالية الأداء المصنعة وفقاً لمعايير API للتطبيقات الصناعية الحرجة",
             image: "/seamless-steel-pipes.jpg",
             category: "أنابيب الصلب",
             features: ["معتمد API 5L", "مختبر الضغط", "أطوال مخصصة"],
@@ -334,7 +406,12 @@ export default function HomePage() {
           description: "خبرة في الصناعة أكثر من 15 سنة",
           color: "from-green-500 to-green-600",
         },
-        { icon: Shield, title: "شريك موثوق", description: "مورد عالمي موثوق", color: "from-purple-500 to-purple-600" },
+        {
+          icon: Shield,
+          title: "شريك موثوق",
+          description: "مورد عالمي موثوق",
+          color: "from-purple-500 to-purple-600",
+        },
         {
           icon: Globe,
           title: "وصول عالمي",
@@ -349,12 +426,14 @@ export default function HomePage() {
           {
             icon: Award,
             title: "اعتراف الصناعة",
-            description: "جوائز وشهادات متعددة من الصناعة تعترف بتميزنا في تجارة الصلب وخدمة العملاء.",
+            description:
+              "جوائز وشهادات متعددة من الصناعة تعترف بتميزنا في تجارة الصلب وخدمة العملاء.",
           },
           {
             icon: Factory,
             title: "مرافق متقدمة",
-            description: "مرافق تخزين ومعالجة حديثة مجهزة بتكنولوجيا حديثة وأنظمة مراقبة الجودة.",
+            description:
+              "مرافق تخزين ومعالجة حديثة مجهزة بتكنولوجيا حديثة وأنظمة مراقبة الجودة.",
           },
           {
             icon: Globe,
@@ -365,14 +444,15 @@ export default function HomePage() {
           {
             icon: Shield,
             title: "ضمان الجودة",
-            description: "برنامج ضمان الجودة الشامل مع الاختبار الصارم والشهادة لكل شحنة منتج.",
+            description:
+              "برنامج ضمان الجودة الشامل مع الاختبار الصارم والشهادة لكل شحنة منتج.",
           },
         ],
       },
     },
-  }
+  };
 
-  const t = content[language]
+  const t = content[language];
 
   return (
     <div className="min-h-screen overflow-hidden">
@@ -411,7 +491,10 @@ export default function HomePage() {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <div className="mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="mb-8 animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <Image
               src="/images/masre-logo.png"
               alt="MASRE GROUP Logo"
@@ -483,11 +566,17 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">{t.about.title}</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                {t.about.title}
+              </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] mb-8 rounded-full"></div>
-              <h3 className="text-xl font-semibold text-[#B91C1C] mb-6">{t.about.subtitle}</h3>
+              <h3 className="text-xl font-semibold text-[#B91C1C] mb-6">
+                {t.about.subtitle}
+              </h3>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">{t.about.description}</p>
+              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                {t.about.description}
+              </p>
 
               <div className="space-y-4 mb-8">
                 {t.about.highlights.map((highlight, index) => (
@@ -497,7 +586,9 @@ export default function HomePage() {
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <CheckCircle className="w-5 h-5 text-[#B91C1C] flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">{highlight}</span>
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {highlight}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -512,17 +603,14 @@ export default function HomePage() {
             <div className="animate-fade-in-right">
               <div className="relative">
                 <Image
-                  src="/steel-factory-modern-facility.jpg"
+                  src="/images/masre-logo.png"
                   alt="MASRE GROUP Facility"
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-2xl w-full h-96 object-cover"
+                  className="rounded-lg shadow-2xl w-full h-96 object-contain"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
-                <div className="absolute bottom-6 left-6 text-white">
-                  <p className="text-lg font-semibold">Modern Steel Processing Facility</p>
-                  <p className="text-sm opacity-90">Amman, Jordan</p>
-                </div>
+                <div className="absolute bottom-6 left-6 text-white"></div>
               </div>
             </div>
           </div>
@@ -534,7 +622,9 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#B91C1C]/5 to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Impact in Numbers</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              Our Impact in Numbers
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] mx-auto mb-8 rounded-full"></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -550,8 +640,12 @@ export default function HomePage() {
                 <h3 className="text-5xl font-bold text-[#B91C1C] mb-2 group-hover:scale-125 transition-transform duration-500 animate-counter">
                   {stat.number}
                 </h3>
-                <p className="text-gray-900 dark:text-white font-semibold text-lg mb-1">{stat.label}</p>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{stat.description}</p>
+                <p className="text-gray-900 dark:text-white font-semibold text-lg mb-1">
+                  {stat.label}
+                </p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  {stat.description}
+                </p>
               </div>
             ))}
           </div>
@@ -562,12 +656,16 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 animate-fade-in">{t.products.title}</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+              {t.products.title}
+            </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto mb-8 rounded-full"></div>
             <p className="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto mb-4 font-medium">
               {t.products.subtitle}
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">{t.products.description}</p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              {t.products.description}
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -591,7 +689,6 @@ export default function HomePage() {
                       {product.category}
                     </Badge>
                   </div>
-                 
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-3 group-hover:text-[#B91C1C] transition-colors duration-300 line-clamp-2">
@@ -600,7 +697,6 @@ export default function HomePage() {
                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
                     {product.description}
                   </p>
-
                 </CardContent>
               </Card>
             ))}
@@ -619,7 +715,9 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in">Why Industry Leaders Choose Us</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in">
+              Why Industry Leaders Choose Us
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] mx-auto mb-8 rounded-full"></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -637,7 +735,9 @@ export default function HomePage() {
                 <h3 className="text-lg font-bold text-[#B91C1C] mb-2 group-hover:text-[#DC2626] transition-colors duration-300">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             ))}
           </div>
@@ -647,7 +747,9 @@ export default function HomePage() {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">{t.services.title}</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+              {t.services.title}
+            </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto mb-8 rounded-full"></div>
             <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto font-medium">
               {t.services.subtitle}
@@ -672,11 +774,17 @@ export default function HomePage() {
                       <h3 className="text-xl font-bold mb-4 group-hover:text-[#B91C1C] transition-colors duration-300">
                         {service.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">{service.description}</p>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        {service.description}
+                      </p>
                       {service.features && (
                         <div className="flex flex-wrap gap-2">
                           {service.features.map((feature, idx) => (
-                            <Badge key={idx} variant="outline" className="text-xs border-[#B91C1C]/30 text-[#B91C1C]">
+                            <Badge
+                              key={idx}
+                              variant="outline"
+                              className="text-xs border-[#B91C1C]/30 text-[#B91C1C]"
+                            >
                               {feature}
                             </Badge>
                           ))}
@@ -695,7 +803,9 @@ export default function HomePage() {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">{t.whyChooseUs.title}</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              {t.whyChooseUs.title}
+            </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-[#B91C1C] via-[#DC2626] to-[#EF4444] mx-auto mb-8 rounded-full"></div>
             <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto font-medium">
               {t.whyChooseUs.subtitle}
@@ -713,8 +823,12 @@ export default function HomePage() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#B91C1C] to-[#DC2626] rounded-full mb-6 shadow-lg group-hover:shadow-xl transition-all duration-500">
                     <reason.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-[#B91C1C]">{reason.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{reason.description}</p>
+                  <h3 className="text-xl font-bold mb-4 text-[#B91C1C]">
+                    {reason.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {reason.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -727,18 +841,29 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8">{t.contact.title}</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8">
+              {t.contact.title}
+            </h2>
             <div className="w-32 h-1 bg-white mx-auto mb-8 rounded-full"></div>
-            <p className="text-2xl text-red-100 mb-6 font-medium">{t.contact.subtitle}</p>
-            <p className="text-lg text-red-100 mb-12 max-w-3xl mx-auto leading-relaxed">{t.contact.description}</p>
+            <p className="text-2xl text-red-100 mb-6 font-medium">
+              {t.contact.subtitle}
+            </p>
+            <p className="text-lg text-red-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+              {t.contact.description}
+            </p>
 
             {/* Icons Row */}
             <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center group animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <div
+                className="text-center group animate-fade-in-up"
+                style={{ animationDelay: "0.2s" }}
+              >
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6 group-hover:bg-white/30 transition-all duration-500 group-hover:scale-110 backdrop-blur-sm">
                   <Phone className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4">{t.contact.phone}</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  {t.contact.phone}
+                </h3>
                 <div className="space-y-2">
                   <a
                     href="https://wa.me/962790079442"
@@ -749,11 +874,16 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="text-center group animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+              <div
+                className="text-center group animate-fade-in-up"
+                style={{ animationDelay: "0.4s" }}
+              >
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6 group-hover:bg-white/30 transition-all duration-500 group-hover:scale-110 backdrop-blur-sm">
                   <Mail className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4">{t.contact.email}</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  {t.contact.email}
+                </h3>
                 <div className="space-y-2">
                   <a
                     href="mailto:sales@masregroup.com"
@@ -764,11 +894,16 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="text-center group animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+              <div
+                className="text-center group animate-fade-in-up"
+                style={{ animationDelay: "0.6s" }}
+              >
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6 group-hover:bg-white/30 transition-all duration-500 group-hover:scale-110 backdrop-blur-sm">
                   <MapPin className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4">{t.contact.address}</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  {t.contact.address}
+                </h3>
                 <p className="text-red-100 text-lg font-medium">
                   {language === "ar" ? "عمان، الأردن" : "Amman, Jordan"}
                 </p>
@@ -789,5 +924,5 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
