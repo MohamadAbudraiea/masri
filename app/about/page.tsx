@@ -498,31 +498,22 @@ export default function AboutPage() {
             <p className="text-red-100 mb-12 text-lg">
               Delivering excellence across continents
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-              <div className="transform hover:scale-110 transition-all duration-500">
-                <div className="text-6xl font-bold mb-3 animate-counter">
-                  15+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+              {[
+                { number: "15+", label: "Years Experience" },
+                { number: "50+", label: "Countries Served" },
+                { number: "1000+", label: "Clients Served" },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col justify-center items-center transform hover:scale-110 transition-all duration-500 bg-red-900/20 p-8 rounded-xl"
+                >
+                  <div className="text-6xl font-bold mb-3 animate-counter">
+                    {item.number}
+                  </div>
+                  <div className="text-red-100 text-lg">{item.label}</div>
                 </div>
-                <div className="text-red-100 text-lg">Years Experience</div>
-              </div>
-              <div className="transform hover:scale-110 transition-all duration-500">
-                <div className="text-6xl font-bold mb-3 animate-counter">
-                  50+
-                </div>
-                <div className="text-red-100 text-lg">Countries Served</div>
-              </div>
-              <div className="transform hover:scale-110 transition-all duration-500">
-                <div className="text-6xl font-bold mb-3 animate-counter">
-                  1000+
-                </div>
-                <div className="text-red-100 text-lg">Clients Served</div>
-              </div>
-              <div className="transform hover:scale-110 transition-all duration-500">
-                <div className="text-6xl font-bold mb-3 animate-counter">
-                  24/7
-                </div>
-                <div className="text-red-100 text-lg">Customer Support</div>
-              </div>
+              ))}
             </div>
           </div>
         </section>

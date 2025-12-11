@@ -65,9 +65,9 @@ export default function HomePage() {
         },
         {
           icon: Phone,
-          number: "24/7",
+          number: "Instant",
           label: "Customer Support",
-          description: "Always Available",
+          description: "Support that moves at your speed",
         },
       ],
       about: {
@@ -289,9 +289,9 @@ export default function HomePage() {
         },
         {
           icon: Phone,
-          number: "24/7",
+          number: "فوري",
           label: "دعم العملاء",
-          description: "متاح دائماً",
+          description: "رد سريع",
         },
       ],
       about: {

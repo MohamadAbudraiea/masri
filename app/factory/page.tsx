@@ -1,69 +1,86 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Card } from "@/components/ui/card"
-import { Factory, Globe, Recycle, MapPin, Handshake, Rocket } from "lucide-react"
+import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import {
+  Factory,
+  Globe,
+  Recycle,
+  MapPin,
+  Handshake,
+  Rocket,
+} from "lucide-react";
 
 export default function FactoryPage() {
   const capabilities = [
     {
       icon: Factory,
       title: "Production Capacity",
-      description: "High-volume steel manufacturing to meet large-scale project demands",
+      description:
+        "High-volume steel manufacturing to meet large-scale project demands",
     },
     {
       icon: Globe,
       title: "Global Reach",
-      description: "Supplying steel products to international markets with strong export capabilities",
+      description:
+        "Supplying steel products to international markets with strong export capabilities",
     },
     {
       icon: Recycle,
       title: "Sustainability",
-      description: "Eco-friendly processes emphasizing recycling and reduced carbon footprint",
+      description:
+        "Eco-friendly processes emphasizing recycling and reduced carbon footprint",
     },
     {
       icon: MapPin,
       title: "Strategic Location",
-      description: "Centrally located facilities ensuring accessibility across regions",
+      description:
+        "Centrally located facilities ensuring accessibility across regions",
     },
     {
       icon: Handshake,
       title: "Partnerships",
-      description: "Strong collaborations with contractors, developers, and distributors",
+      description:
+        "Strong collaborations with contractors, developers, and distributors",
     },
     {
       icon: Rocket,
       title: "Future Growth",
-      description: "Expanding operations with continuous investment in new markets and technologies",
+      description:
+        "Expanding operations with continuous investment in new markets and technologies",
     },
-  ]
+  ];
 
   const processes = [
     {
       step: "01",
       title: "Raw Material Selection",
-      description: "Careful selection of high-grade raw materials from trusted global suppliers",
+      description:
+        "Careful selection of high-grade raw materials from trusted global suppliers",
       image: "/steel-raw-materials-warehouse.jpg",
     },
     {
       step: "02",
       title: "Processing & Fabrication",
-      description: "Advanced processing using modern machinery and precision techniques",
+      description:
+        "Advanced processing using modern machinery and precision techniques",
       image: "/steel-processing-machinery-factory.jpg",
     },
     {
       step: "03",
       title: "Quality Testing",
-      description: "Comprehensive testing and inspection to ensure product specifications",
+      description:
+        "Comprehensive testing and inspection to ensure product specifications",
       image: "/quality-testing.jpg",
     },
     {
       step: "04",
       title: "Packaging & Delivery",
-      description: "Professional packaging and timely delivery to customer locations",
+      description:
+        "Professional packaging and timely delivery to customer locations",
       image: "/steel-packaging-delivery-warehouse.jpg",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen py-20">
@@ -75,8 +92,9 @@ export default function FactoryPage() {
           </h1>
           <div className="w-24 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Discover our state-of-the-art metal forming factory and advanced manufacturing processes that deliver
-            premium steel products to global markets.
+            Discover our state-of-the-art metal forming factory and advanced
+            manufacturing processes that deliver premium steel products to
+            global markets.
           </p>
         </div>
 
@@ -92,7 +110,9 @@ export default function FactoryPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
               <div className="text-white p-8">
-                <h2 className="text-3xl font-bold mb-4">Advanced Metal Forming Facility</h2>
+                <h2 className="text-3xl font-bold mb-4">
+                  Advanced Metal Forming Facility
+                </h2>
                 <p className="text-xl">Modern manufacturing complex in Sudan</p>
               </div>
             </div>
@@ -113,7 +133,9 @@ export default function FactoryPage() {
               >
                 <capability.icon className="w-12 h-12 text-[#B91C1C] mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3">{capability.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{capability.description}</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {capability.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -125,7 +147,8 @@ export default function FactoryPage() {
             <h2 className="text-3xl font-bold mb-4">Manufacturing Process</h2>
             <div className="w-16 h-1 bg-[#B91C1C] mx-auto mb-8"></div>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Our streamlined manufacturing process ensures consistent quality and timely delivery of steel products.
+              Our streamlined manufacturing process ensures consistent quality
+              and timely delivery of steel products.
             </p>
           </div>
           <div className="space-y-12">
@@ -152,7 +175,9 @@ export default function FactoryPage() {
                     </div>
                     <h3 className="text-2xl font-bold">{process.title}</h3>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">{process.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                    {process.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -164,29 +189,30 @@ export default function FactoryPage() {
           <Card className="bg-gradient-to-r from-[#B91C1C] to-[#991B1B] text-white p-12">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Production Capacity</h2>
-              <p className="text-red-100">Our manufacturing capabilities by the numbers</p>
+              <p className="text-red-100">
+                Our manufacturing capabilities by the numbers
+              </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold mb-2">50,000</div>
-                <div className="text-red-100">Tons/Month</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">24/7</div>
-                <div className="text-red-100">Operations</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">200+</div>
-                <div className="text-red-100">Skilled Workers</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">99.5%</div>
-                <div className="text-red-100">Quality Rate</div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+              {[
+                { value: 50000, label: "Tons/Month" },
+                { value: 200, label: "Skilled Workers" },
+                { value: 99.5, label: "Quality Rate" },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col justify-center items-center transform hover:scale-110 transition-all duration-500 bg-red-900/20 p-6 rounded-xl"
+                >
+                  <div className="text-4xl font-bold mb-2 animate-counter">
+                    {item.value}
+                  </div>
+                  <div className="text-red-100">{item.label}</div>
+                </div>
+              ))}
             </div>
           </Card>
         </section>
       </div>
     </div>
-  )
+  );
 }
