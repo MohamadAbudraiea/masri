@@ -500,7 +500,8 @@ export default function HomePage() {
               alt="MASRE GROUP Logo"
               width={140}
               height={140}
-              className="mx-auto transition-all duration-700 hover:scale-110 drop-shadow-2xl"
+              className="mx-auto transition-all duration-700 hover:scale-110 drop-shadow-2xl 
+               w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-56 xl:h-56"
             />
           </div>
 
